@@ -1,0 +1,569 @@
+<script type="text/javascript" language="JavaScript1.3">
+<!--
+//  IMPORTANT NOTE: The following Javascript functions are provided for example purposes only.
+//  Unless you have experience working with Javascript, please refer to your local technical
+//  resources for assistance with modification.
+//  If many of your patrons use an out of date browser (such as Netscape 4.7) with incomplete support
+//  for Javascript, you may wish to use srchhelp_X_nojavascript.html instead. Simply rename this file
+//  srchhelp_X_javascript.html and then rename that file srchhelp_X.html.
+// -->
+
+<!-- Hide the JavaScript from browsers which do not understand SCRIPT tag
+
+<!-- Initialize arrays used in following functions -->
+var searchType = new Array();
+var searchName = new Array();
+var searchValue = new Array();
+var limitName = new Array();
+var limitValue = new Array();
+
+function processLimit()
+<!-- last updated : January 4, 2005 -->
+<!--
+// This function is called by the submitSearch function.
+// This function processes all limit form elements in the current page.
+// Any form element used to apply a limit to the search entered by the user is
+// considered a limit form element for the purpose of this function.
+// Innovative recommends always using tokens to insert limit form elements into HTML.
+// For more information on tokens see the User Manual or http://csdirect.iii.com .
+// All limit form elements must appear contiguously within the HTML and must be enclosed
+// in the following hidden form tags.
+// The user must include the following hidden form element before the first
+// limit form element appearing in the search form:
+// <INPUT TYPE="hidden" NAME="startLimit">
+// The following hidden form element must be included after the last limit form
+// element appearing in the search form:
+// <INPUT TYPE="hidden" NAME="endLimit">
+// -->
+{
+var limitWorkString = "";
+for (var i = 0; i < limitName.length; i++)
+{
+<!--
+//  The following statement processes date form elements.
+//  Date limits must be processed differently since they contain text form elements.
+// -->
+if (limitName[i] == "Da" || limitName[i] == "Db") {limitWorkString += "&" + limitName[i] + "=" + limitValue[i]; continue;}
+<!-- The following statement processes all selection list form elements. -->
+if (limitValue[i] != 0) {limitWorkString += "&" + limitName[i] + "=" + limitValue[i];}
+else if(limitName[i] != "availlim") {limitWorkString += "&" + limitName[i]+"=";}
+}
+<!-- The following statement checks for the availability limit. -->
+if (document.search.availlim != null) {
+if (document.search.availlim.checked) {limitWorkString += "&availlim=1";}
+}
+return limitWorkString;
+}
+
+function processSearch()
+<!-- version 1 : January 22, 2003 -->
+<!--
+// This function is called by the submitSearch function.
+// This function processes field limit, search text, and boolean form elements in the current page.
+// Any form element which allows the user to choose a field limit, type search text, or choose
+// a boolean operator is considered a search form element for the purpose of this function.
+// All search form elements must appear contiguously within the HTML and must be enclosed
+// in the following hidden form tags.
+// The user must include the following hidden form element before the first search
+// form element appearing in the search form:
+// <INPUT TYPE="hidden" NAME="startSearch">
+// The following hidden form element must be included after the last search form
+// element appearing in the search form:
+// <INPUT TYPE="hidden" NAME="endSearch">
+// -->
+{
+var searchWorkString = "";
+for (var i = 0; i < searchName.length; i++)
+{
+if (searchName[i].indexOf("fieldLimit") != -1)
+{
+if ((searchValue[i] != 0) && (searchValue[i+1].length != 0))
+{
+<!-- NOTE: This statement places parentheses around the input typed by the user. -->
+searchWorkString += searchValue[i] + "(" + searchValue[i+1] + ")";
+i++;
+}
+continue;
+}
+else if (searchName[i].indexOf("searchText") != -1)
+{
+if (searchValue[i].length != 0)
+{
+<!-- NOTE: This statement places parentheses around the input typed by the user. -->
+searchWorkString += "(" + searchValue[i] + ")";
+}
+continue;
+}
+else if (searchName[i].indexOf("boolean") != -1)
+{
+if ((searchType[i+2] == "text") && (searchValue[i+2].length != 0))
+{
+searchWorkString += searchValue[i];
+}
+continue;
+}
+else
+{
+continue;
+}
+}
+return searchWorkString;
+}
+
+function submitSearch(searchForm)
+<!-- last updated : January 13, 2005 -->
+<!--
+// This function is called when the user clicks the submit button.
+// This function processes all form elements in the form named search and
+// populates the arrays searchType, searchName, searchValue, limitName, limitValue
+// with data. It then passes the data to the functions processSearch and processLimit; please
+// see the description of those functions for important information on the hidden form elements
+// within the form named search which are required for this function to work properly.
+// Finally, this function replaces the current page with a URL constructed based on the user's
+// form input.
+// -->
+{
+var isSearch = 0;
+var isLimit = 0;
+
+var searchString = "";
+var limitString = "";
+
+var searchArrayCounter = 0;
+var limitArrayCounter = 0;
+
+for (var i = 0; i < searchForm.elements.length; i++)
+{
+if (searchForm[i].name.indexOf("startSearch") != -1) {isSearch = 1; isLimit = 0; continue;}
+else if (searchForm[i].name.indexOf("startLimit") != -1) {isSearch = 0; isLimit = 1; continue;}
+else if (searchForm[i].name.indexOf("endSearch") != -1) {isSearch = 0; isLimit = 0; continue;}
+else if (searchForm[i].name.indexOf("endLimit") != -1) {isSearch = 0; isLimit = 0; continue;}
+else
+{
+if (isSearch == 1)
+{
+searchName[searchArrayCounter] = searchForm[i].name;
+if (searchForm[i].type == "select-one") {searchType[searchArrayCounter] = "select-one"; searchValue[searchArrayCounter] = searchForm[i].options[searchForm[i].selectedIndex].value; searchArrayCounter++; continue;}
+else if (searchForm[i].type == "text") { searchType[searchArrayCounter] = "text"; searchValue[searchArrayCounter] = searchForm[i].value; searchArrayCounter++; continue;}
+else {searchType[searchArrayCounter] = ""; searchValue[searchArrayCounter] = ""; searchArrayCounter++; continue;}
+}
+else if (isLimit == 1)
+{
+limitName[limitArrayCounter] = searchForm[i].name;
+if (searchForm[i].type == "select-one") {limitValue[limitArrayCounter] = searchForm[i].options[searchForm[i].selectedIndex].value; limitArrayCounter++; continue;}
+else if (searchForm[i].type == "select-multiple")
+{ for (var m = 0; m < searchForm[i].options.length; m++)
+{
+if (searchForm[i].options[m].selected)
+{
+limitName[limitArrayCounter] = searchForm[i].name;
+limitValue[limitArrayCounter] = searchForm[i].options[m].value;
+limitArrayCounter++;
+}
+}
+continue;
+}
+else if (searchForm[i].type == "text") {limitValue[limitArrayCounter] = searchForm[i].value; limitArrayCounter++; continue;}
+else {limitValue[limitArrayCounter] = ""; limitArrayCounter++; continue;}
+}
+else
+{
+continue;
+}
+}
+}
+searchString = processSearch();
+limitString = processLimit();
+
+searchString = encodeURI(searchString);
+<!--
+// Replace statements convert certain indexed special characters from the original
+// character to their escaped form. Each statement here must have a corresponding
+// statement in two places in the parseSearch function.
+// ++ is converted to %2B%2B (example, c++)
+// NOTE: do not convert single + to %2B or the scripts will break
+// # is converted to %23
+// & is converted to %26
+// / is converted to %2F
+//-->
+if (searchString.indexOf("++") != -1) {searchString = searchString.replace(/\+\+/, "%2B%2B");}
+if (searchString.indexOf("#") != -1) {searchString = searchString.replace(/#/g, "%23");}
+if (searchString.indexOf("&") != -1) {searchString = searchString.replace(/&/g, "%26");}
+if (searchString.indexOf("?") != -1) {searchString = searchString.replace(/\?/g, "%3F");}
+if (searchString.indexOf("/") != -1) {searchString = searchString.replace(/\//g, "%2F");}
+window.location.href = "http://" + location.host + "/search/X?" + searchString + limitString;
+return false;
+}
+
+function modifySearch()
+<!-- last updated : October 29, 2004 -->
+<!--
+// This function takes the URL of the current page and extracts all search data into the
+// array modifyString3. It then passes that information to the function parseSearch.
+// -->
+{
+var modifyString1 = decodeURI(location.search);
+var modifyString2 = new Array();
+var modifyString3 = new Array();
+var modifyString2 = modifyString1.split("&");
+if (modifyString2[0].indexOf("?NOSRCH=") != -1)
+{
+var modifyString3 = modifyString2[0].split("?NOSRCH=");
+}
+else
+{
+var modifyString3 = modifyString2[0].split("?");
+}
+parseSearch(modifyString3[1]);
+}
+
+function parseSearch(str)
+<!-- last updated : November 17, 2004 -->
+<!--
+// This function is called by the function modifySearch.
+// This function takes the relevant portion of the URL of the current page and attempts to place
+// all data within that URL back into the appropriate form elements on the page within the
+// form named search. If the function can't find appropriately named form elements into which
+// to place data, it puts everything into the text element named searchText1 in the form named search.
+// -->
+{
+var temp = "";
+var elementName = "";
+var fieldLimitCounter = 1;
+var searchTextCounter = 1;
+var booleanCounter = 1;
+
+<!-- Convert %3A to : for proper display and processing of field limits -->
+str = str.replace(/%3A/g, ":");
+<!-- Store original search string in case we can't parse out the search elements -->
+var origSearch = str;
+
+for (var i = 0; i < str.length; i++)
+{
+if (str.charAt(i) == ":")
+{
+elementName = "fieldLimit" + fieldLimitCounter;
+temp = str.charAt(i-1) + str.charAt(i);
+for (var m = 0; m < document.search.length; m++)
+{
+if (document.search.elements[m].name == elementName)
+{
+for (var n = 0; n < document.search.elements[m].length; n++)
+{
+if (document.search.elements[m].options[n].value == temp)
+{
+document.search.elements[m].options[n].selected = true;
+fieldLimitCounter++;
+break;
+}
+else {continue;}
+}
+break;
+}
+else
+{
+continue;
+}
+}
+continue;
+}
+else if (str.charAt(i) == "(")
+{
+temp = "";
+elementName = "searchText" + searchTextCounter;
+for (var m = 0; m < document.search.length; m++)
+{
+if (document.search.elements[m].name == elementName)
+{
+for (i = i + 1; i < str.length; i++)
+{
+if (str.charAt(i) == ")") {i++; break;}
+else {temp += str.charAt(i); continue;}
+}
+searchTextCounter++;
+<!--
+// Replace statements convert certain indexed special characters from escaped form to the
+// original character. Each statement here must have a corresponding statement in the
+// submitSearch function and both here and at the end of the parseSearch function.
+// %2B is converted to +
+// %23 is converted to #
+// %26 is converted to &
+// %2F is converted to /
+//-->
+temp = temp.replace(/%2B/g, "+");
+temp = temp.replace(/%23/g, "#");
+temp = temp.replace(/%26/g, "&");
+temp = temp.replace(/%3F/g, "?");
+temp = temp.replace(/%2F/g, "/");
+document.search.elements[m].value = temp;
+break;
+}
+else
+{
+continue;
+}
+}
+continue;
+}
+else
+{
+temp = "";
+elementName = "boolean" + booleanCounter;
+for (i = i; i < str.length; i++)
+{
+if (str.charAt(i+1) == ":"  || str.charAt(i+1) == "(") {break;}
+else {temp += str.charAt(i); continue;}
+}
+if (temp.length > 0)
+{
+for (var m = 0; m < document.search.length; m++)
+{
+if (document.search.elements[m].name == elementName)
+{
+for (var n = 0; n < document.search.elements[m].length; n++)
+{
+if (document.search.elements[m].options[n].value.indexOf(temp) != -1)
+{
+document.search.elements[m].options[n].selected = true;
+booleanCounter++;
+temp = "";
+break;
+}
+else {continue;}
+}
+fieldLimitCounter = booleanCounter;
+searchTextCounter = booleanCounter;
+break;
+}
+else
+{
+continue;
+}
+}
+if (temp.length > 0)
+{
+<!-- The following statement replaces + with space for display -->
+origSearch = origSearch.replace(/\+/g, " ");
+<!--
+// Replace statements convert certain indexed special characters from escaped form to the
+// original character. Each statement here must have a corresponding statement in the
+// submitSearch function and both here and earlier in the parseSearch function.
+// %2B is converted to +
+// %23 is converted to #
+// %26 is converted to &
+// %2F is converted to /
+//-->
+origSearch = origSearch.replace(/%2B%2B/g, "++");
+origSearch = origSearch.replace(/%23/g, "#");
+origSearch = origSearch.replace(/%26/g, "&");
+origSearch = origSearch.replace(/%3F/g, "?");
+origSearch = origSearch.replace(/%2F/g, "/");
+<!--
+// If we get to this point, parseSearch has not been able to parse the user's search.
+// In some cases, fieldLimit1 will have been found and set. Because we are
+// writing the entire original search into searchText1, we need to reset fieldLimit1
+// to avoid possible conflicts with the data in searchText1. The for loop below finds
+// the "any field" option in fieldLimit1 and selects it. Then we put the original search
+// string into searchText1.
+//-->
+for (var n = 0; n < document.search.fieldLimit1.length; n++)
+{
+if (document.search.fieldLimit1.options[n].value == "")
+{
+document.search.fieldLimit1.options[n].selected = true;
+}
+}
+document.search.searchText1.value = origSearch;
+}
+continue;
+}
+else
+{
+continue;
+}
+}
+}
+}
+
+function gotoDestination(path,port) {
+  if (port == null) port = 80;
+	var url = "http://" + location.hostname + ":" + port + path;
+	window.open(url);
+}
+
+function GoBack() {
+  history.back()
+}
+
+if (location.search != '') modifySearch(document.location.search); document.search.searchText1.focus();
+//-->
+</script>
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+
+<span class="title">JAC Plus - Advanced Keyword Search</span>
+<hr noshade size="1">
+<!--Begin the main content table-->
+<div id="main">
+<!--
+<div class="helptabs"><span class="selected"> Keyword </span><span> <a href="/search/t">Title</a> </span><span> <a href="/search/a">Author</a> </span><span> <a href="/search/d">Subject</a> </span><span> <a href="/search/c">Call #</a> </span><span class="right"> <a href="/search/i">ISN</a> </span></div> -->
+<div class="tabBody">
+<br/>
+<center>
+<!--{logout}-->
+&nbsp; <A HREF="/search/"><IMG SRC="/screens/startover.gif" BORDER=0 ALT="[START OVER]"></A>
+<!--&nbsp; <A HREF="/search/Y"><IMG SRC="/screens/simple.gif" BORDER=0 ALT="[SIMPLE SEARCH]"></a>-->
+&nbsp; <A HREF="/search/X"><IMG SRC="/screens/clear_form.gif" BORDER=0 ALT="[CLEAR FORM VALUES]"></a>
+&nbsp; <a href="http://www.jenkinslaw.org/collection/jac/guide/index.php"><img src="/screens/help.gif" border="0" alt="JAC Plus Help Guide"></a>
+</center>
+<table width="90%" border="0" align="center" cellpadding="2" cellspacing="2">
+<tr>
+<td>
+<!--{msg}-->
+<!--{spellcheck}-->
+<!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->
+<div class="advSrchtool">
+<!--{advancedsearchformbegin}-->
+<!--{clearform}-->
+
+<p>
+Please fill in the form, select limits, and click Submit. <a href="http://www.jenkinslaw.org/collection/jac/guide/tips.php#keyword">Search Tips</a>
+</p>
+</p>
+<!--{advancedsearch}-->
+<input type="hidden" name="startLimit" />
+<!--{avalimit}-->
+<!--{advancesubmit}-->
+
+
+<p>
+
+
+<!--<input type="image" border="0" name="submit" src="/screens/submit.gif">-->
+</p>
+<table border="0" cellpadding="2" cellspacing="5" width="90%">
+<tr>
+<td align="left" valign="top" colspan=2>
+<p class="pageMainAreaSubHeader"><strong>Limited to:</strong></p>
+</td>
+</tr>
+<tr>
+	<td> 
+<!--{lang}--> 
+	</td>
+	<td> 
+<!--{mattype}-->
+	</td>
+</tr>
+<tr>
+	<td> 
+<!--{branch}-->
+	</td>
+	<td> 
+<!--{publish}-->
+	</td>
+</tr>
+<tr>
+<td colspan=2>
+<!--{DOCDATE}-->
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p class="pageMainAreaSubHeader"><strong>Sorted by:</strong></p>
+<p>
+<!--{sort}-->
+<input type="hidden" name="endLimit" />
+</p>
+</td>
+</tr>
+</table>
+
+<!--{advancedsearchformend}-->
+
+<!--{advancedsubmit}-->
+<!--<input type="image" border="0" name="submit2" src="/screens/submit.gif">
+-->
+
+<br/>
+<!--Begin search help table-->
+<!--
+<table width="90%" border="1" align="center" cellpadding="2" cellspacing="0" bordercolor="#FFFFFF">
+<tr>
+<td colspan="2" class="pageNavAreaText" height="25px"><a name="tips"></a>Search Tips</td>
+</tr>
+<tr valign="top">
+<td align="left" class="pageMainArea" width="70%"><strong>Multiple Words</strong><br/>
+When searching multiple words the system will automatically supply the Boolean &quot;and&quot; operator between each word; multiple words entered for the search will all occur somewhere in the retrieved records though not necessarily in the order entered. Both examples on the right will retrieve the same results.</td>
+<td align="left" class="pageMainArea"><p>world health organization</p>
+<p>world and health and orginaztion</p></td>
+</tr>
+<tr valign="top">
+<td align="left" class="pageMainArea"><strong>Phrase Searches</strong><br/>
+Search for complete phrases by enclosing them in quotation marks. Words enclosed in double quotes will appear together in all results exactly as typed.</td>
+<td align="left" class="pageMainArea">&quot;world health organization&quot;</td>
+</tr>
+<tr valign="top">
+<td align="left" class="pageMainArea"><strong>Wildcards</strong><br/>
+Words may be right-hand truncated using an asterisk. Use a single asterisk * to truncate from 1-5 characters. Use a double asterisk ** for open-ended truncation.
+<br/>You may also use a question mark ('?') to replace a
+single character anywhere within a word.
+</td>
+<td align="left" class="pageMainArea"><p>environment* polic*</p><p/>{u00A0}{u00A0}{u00A0}{u00A0}{u00A0}{u00A0}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comput**<p/>{u00A0}{u00A0}{u00A0}{u00A0}{u00A0}{u00A0}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wom?n</td>
+</tr>
+<tr valign="top">
+<td align="left" class="pageMainArea"><strong>Boolean Operators</strong><br/>
+Use AND or OR to specify multiple words
+in any field, any order. Use AND NOT to exclude words. Select the operator you wish to use from the selection list. Parentheses group words together when using Boolean operators.</td>
+<td align="left" class="pageMainArea">stocks and bonds
+(indian or pacific) and (ocean life and not mamals)</td>
+</tr>
+<tr valign="top">
+<td align="left" class="pageMainArea"><strong>Proximity Operators</strong><br/>
+The NEAR operator is used to retrieve records that contain the specified words or phrases within ten words of each other in the same indexed field.
+<p>The WITHIN operator is similar to the NEAR operator, but allows the user to specify the maximum number of words that may appear between the specified words. WITHIN 10 and NEAR are equivalent.</p>
+</td>
+<td align="left" class="pageMainArea"><p>international near conference</p>
+<p>fractal within 3 geometry</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="2" align="left" class="pageMainArea"><strong>Field limits</strong><br/>
+Field limits may  be specified by selecting a field limit from the selection list in the form above. These limits appear before the word or phrase to be searched. A field limit causes the system to search only the specified field for the specified word(s). The following field limits are supported:<p></p>
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+<tr>
+<td><u>Field limit</u></td>
+<td><u>Meaning</u></td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Search only author fields</td>
+</tr>
+<tr>
+<td>Title:</td>
+<td>Search only title fields</td>
+</tr>
+<tr>
+<td>Subject:</td>
+<td>Search only subject fields</td>
+</tr>
+<tr>
+<td> Note:</td>
+<td>Search only note fields</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+-->
+<!--End search help table-->
+</td>
+</tr>
+</table>
+</div>
+</div>
+<!--End the main content table-->
+<!--{botlogo}-->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!--{toplogo}-->
+<script language="JavaScript" type="text/JavaScript">
+function addEngine(name,ext,cat)
+{
+	if ((typeof window.sidebar == "object") && (typeof
+	window.sidebar.addSearchEngine == "function"))
+	{
+		window.sidebar.addSearchEngine(
+			"http://www.jenkinslaw.org/collection/jac/"+name+".src",
+			"http://www.jenkinslaw.org/collection/jac/"+name+"."+ext,
+			name,cat);
+		//alert('Download completed');
+	}
+	else
+	{
+		errorMsg(name,ext,cat);
+	}
+}
+</script>
+<table cellspacing="10" cellpadding="10">
+<tr>
+<td valign="top">
+<!--{patroninfo}-->
+</td>
+<td>
+<!-- <a href="http://www.jenkinslaw.org/collection/jac/guide/index.php"><img src="/screens/help.gif" border="0" alt="JAC Help Guide"></a> -->
+<br>
+<!--{startover}-->
+</td>
+</tr>
+</table>
+
+<a href="javascript:addEngine('jac','gif','Jenkins Law Library Catalog')">Click here to add the Catalog Search to your browsers search bar.</a>
+
+<table cellspacing="5" cellpadding="5">
+<tr>
+<td valign="middle">
+<b>Catalog Searches:</b>
+</td>
+<td valign="top">
+<!--{ifmymil}-->
+<!--{searchbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifpsearch}-->
+<!--{psearchbtn}-->
+<!--{xif}-->
+ &nbsp; 
+<!--{ifpatrate}-->
+<!--{patratebtn}-->
+<!--{xif}-->
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<b>Circulation Record:</b>
+</td>
+<td>
+<!--{ifchkouts}-->
+<!--{chkoutsbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifholds}-->
+<!--{holdsbtn}-->
+&nbsp;
+<!--{xif}-->
+<!--{ifill}-->
+<!--{illbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifbookings}-->
+<!--{bookingsbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{iffines}-->
+<!--{finesbtn}-->
+<!--{xif}-->
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<b>My Information:</b>
+</td>
+<td valign="top">
+<!--{ifmodifypin}-->
+<!--{modifypinbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifcirchist}-->
+<!--{circhistbtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifmylists}-->
+<!--{mylists}--> 
+  &nbsp;
+<!--{xif}-->
+<!--{ifmodifypatinfo}-->
+<!--{modifypatinfobtn}-->
+  &nbsp;
+<!--{xif}-->
+<!--{ifmsgs}-->
+<!--{msgsbtn}-->
+&nbsp;
+<!--{xif}-->
+<a href="http://www.jenkinslaw.org/contact-us"><img src="http://jac.jenkinslaw.org/screens/update_email.gif" alt="Update Your Email Address" border="0"></a>
+&nbsp;
+<a href="http://www.jenkinslaw.org/membership/flash"><img src="http://jac.jenkinslaw.org/screens/flash.gif" alt="Sign up for Jenkins Flash" border="0"></a>
+&nbsp;
+<a href="http://www.jenkinslaw.org/about/membership/rates.php"><img src="http://jac.jenkinslaw.org/screens/renewmem.gif" alt="Renew Your Jenkins Membership" border="0"></a>
+</td>
+</tr>
+<tr>
+<td valign="middle">
+<b>Contact Us:</b>
+</td>
+<td>
+<a href="http://www.jenkinslaw.org/suggestions"><img src="http://jac.jenkinslaw.org/screens/suggest.gif" alt="Suggestion Box" border="0"></a>
+&nbsp;
+<a href="http://www.jenkinslaw.org/research/catalog/book_suggestions"><img src="http://jac.jenkinslaw.org/screens/suggest_title.gif" border="0" alt="Suggest a Title"></a>
+&nbsp;
+<a href="http://www.jenkinslaw.org/contact-us"><img src="http://jac.jenkinslaw.org/screens/problem.gif" border="0" alt="Report a Problem/Error"></a>
+</td>
+</tr>
+</table>
+
+<BR>
+<!--{patfunc}-->
+
+<!--{botlogo}-->
