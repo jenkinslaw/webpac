@@ -1,71 +1,151 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 15 February 2008 -->
-<head>
-<title>Jenkins Law Library - Jenkins Catalog - The Legal Resource Portal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
-</head>
-<body>
 <!--{toplogo}-->
+<div class="pageContentInner">
 <!--{patron}-->
-<h2 class="srchhelpHeader">Suggest a Title for Purchase</h2>
+<h1 class="pageHeader">Suggest a Title for Purchase</h1>
 <!--{ifpinerrormessage}-->
-<div class="srchhelpText">
+<div>
 <span class="errormessage">
 <!--{pinerrormessage}-->
 </span>
 </div>
 <!--{xif}-->
-<br/>
-<div class="advSrchtool">
-<div class="srchhelpText">Additional items library should acquire:</div>
+
+<div id="accessibleForm" class="form1Part">
 <form method="POST">
-<span class="magFive">
-<input name="submit" type="SUBMIT" value="SUBMIT THIS SUGGESTION">
+
+<!--{ifneedpatronverify}-->
+
+<fieldset class="formLogin">
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<label for="name">
+<!--{nameprompt}-->
+</label>
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
 </span>
-<table border="0"  class="textFix">
-<tr>
-<td align="right">Author:</td>
-<td>
-<input name="author" value="" size="40" maxlength="40">
-</td>
-</tr>
-<tr>
-<td align="right">Title:</td>
-<td>
-<input name="title" value="" size="40" maxlength="40">
-</td>
-</tr>
-<tr>
-<td align="left" colspan="2">Publisher &amp; where &amp; when published:</td>
-</tr>
-<tr>
-<td >&nbsp;</td>
-<td>
-<input name="publish" value="" size="60" maxlength="60">
-</td>
-<tr>
-<td align="left" colspan="2">Where you saw this item mentioned:</td>
-</tr>
-<tr>
-<td >&nbsp;</td>
-<td>
-<input name="mention" value="" size="60" maxlength="60">
-</td>
-</tr>
-<tr>
-<td align="left" colspan="2">Other Information:</td>
-</tr>
-<tr>
-<td >&nbsp;</td>
-<td>
-<input name="other" value="" size="40" maxlength="40">
-</td>
-</tr>
-</table>
+</div>
+<!--{xif}-->
+
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{ifpinerrormessageisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+</div>
+</fieldset>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+Additional items library should acquire:
+</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{authorprompt}-->
+</span>
+<!--{author}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{titleprompt}-->
+</span>
+<!--{title}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{publishprompt}-->
+</span>
+<!--{publish}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{mentionprompt}-->
+</span>
+<!--{mention}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{otherprompt}-->
+</span>
+<!--{other}-->
+</div>
+
+</fieldset>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+
 </form>
 </div>
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-</body>
-</html>

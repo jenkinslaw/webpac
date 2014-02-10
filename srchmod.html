@@ -1,33 +1,28 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 15 February 2008 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Jenkins Law Library - Jenkins Catalog - The Legal Resource Portal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<title>Millennium Web Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
 </head>
-<body onload="document.forms[0].elements[1].focus();">
+<body>
 <!--{toplogo}-->
-<table width="100%">
-<tr valign="middle">
-<td rowspan="2">
-<!--{patron}-->
-</td>
-</tr>
-<tr valign="top" align="right">
-<td >
-<!--{prevpage}-->
-</td>
-<td>
-<!--{logout}-->
-</td>
-<td>
-<!--{return}-->
-</td></tr></table>
-<h2 class="srchhelpHeader">Jenkins Catalog Limit/Sort Search</h2>
-<div class="advSrchtool">
-<!--{formbegin}-->
-<div class="srchhelpText">
+<div class="pageContentInner">
+<h1 class="pageHeader">Limit/Sort Search</h1>
+
+<p>
 You searched for the
 <!--{searchtypeindex}-->
 
@@ -35,58 +30,78 @@ You searched for the
 -
 <!--{entriesfoundnum}-->
  entries found.
-</div>
-<div class="srchhelpText">
-Please fill in the form, select criteria to limit by, and click Submit. 
-</div>
+</p>
+
 <!--{iferr}-->
-<br/>
-<div class="srchhelpText">
+<div><span class="errormessage">
 <!--{errmsg}-->
-</div>
+</span></div>
 <!--{xif}-->
-<div style="float:right; margin:0 6px 0 2px;">
-<!--{submit}-->
-<!--{cancel}-->
-</div>
-<table class="textFix" cellpadding="5">
-<tr valign="middle">
-<td class="srchhelpText">Location:</td>
-<td>
+
+<div class="form1Part" id="accessibleForm">
+<!--{formbegin}-->
+
+<fieldset>
+<legend>Please select criteria to limit by:</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="W">Location:</label>
+</span>
 <!--{WHERE_select}-->
-</td>
-</tr>
-<tr valign="middle">
-<td class="srchhelpText">Material type:</td>
-<td>
-<!--{MATERIAL_select}-->
-</td>
-</tr>
-<tr valign="middle">
-	<td  class="srchhelpText"></td>
-<td>
-	<!--{LANGUAGE_select}-->
-</td>
-</tr>
-</table>
-<div>
-<!--{PUBLISHER_label}-->
-<!--{PUBLISHER_select}-->
-</div>
-<div class="srchhelpText">Year:
-<!--{YEAR_select}-->
 </div>
 
-<div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="M">Material type:</label>
+</span>
+<!--{MATERIAL_select}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="L">Language:</label>
+</span>
+<!--{LANGUAGE_select}-->
+</div>
+
+<div class="formEntryArea">
+<fieldset class="formFieldsetInner">
+<legend>Year of publication:</legend>
+<div class="formEntryArea">
+<!--<span class="formLabel">
+<label for="Ya">Year of publication:</label>
+</span> -->
+<!--{YEAR_select}-->
+</div>
+</fieldset>
+</div>
+
+<div class="formEntryArea">
+<label for="NAME" class="accessibleAddInfo">Limit type:</label>
+<span class="formLabel"><label for="VALUE">Enter limits:</label></span>
 <!--{TITLE_label}-->
 <!--{TITLE_select}-->
 </div>
-<br/>
-<div class="srchhelpText">
+
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort By:</label>
+</span>
 <!--{sort}-->
 </div>
-<!--{formend}-->
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
 </div>
+
+</fieldset>
+<!--{formend}-->
+</div> <!-- form1Part -->
+
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
 </body>
 </html>

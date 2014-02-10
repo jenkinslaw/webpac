@@ -1,48 +1,134 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 02 May 2008 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
 <head>
-<title>Jenkins Law Library - Jenkins Catalog - The Legal Resource Portal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<title>Millennium Web Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
 </head>
 <body>
 <!--{toplogo}-->
-<span class="title">Login to Remote Databases</span>
-<hr noshade size="1">
-<FORM METHOD=POST>
-<p><b>NOTE</b>: This service is available remotely to <b><a href="http://www.jenkinslaw.org/membership">Jenkins members</a></b>.
-
-<p>Please enter the following information
-
-<table width="100%">
-<TR>
-	<TD WIDTH=30%></TD>
-	<TD><font face="arial, helvetica, sans-serif" size="2">Enter your Last Name, ex. Brown</FONT></TD>
-</TR>
-<TR>
-	<TD><font face="arial, helvetica, sans-serif" size="2">Your Name</TD>
-	<TD><font face="arial, helvetica, sans-serif" size="2"><INPUT NAME=name SIZE=40 MAXLENGTH=40></TD>
-</TR>
-<TR>
-	<TD></TD>
-	<TD><font face="arial, helvetica, sans-serif" size="2">Enter the shorter number from Jenkins' Membership Card, ex. 12345.</FONT></TD>
-</TR>
-<TR>
-	<TD><font face="arial, helvetica, sans-serif" size="2">Membership Number</TD>
-	<TD><font face="arial, helvetica, sans-serif" size="2"><INPUT NAME=code TYPE=PASSWORD SIZE=40 MAXLENGTH=40></TD>
-</TR>
-</TABLE>
-<B><FONT COLOR="red">
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part" id="accessibleForm">
+<form method="post" target="_top" name="patform">
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
 <!--{errmsg}-->
-</FONT></B>
+<!--{xif}-->
+</span>
+<!--{xif}-->
 
-<dir><b>REMINDER:</b> To protect your privacy, please be sure to logout or close your browser when you are finished with your session.</dir>
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
 
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
 <p>
-<a href="http://www.jenkinslaw.org/collection/jac/forms/membernumber.php"><img src="/screens/membernum.gif" border="0" alt="Request Your Membership Number"></a> &nbsp;&nbsp; <a href="http://www.jenkinslaw.org/contact-us"><img src="/screens/problem.gif" border="0" alt="Report a Problem/Error"></a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  <input type=image name=submit src="http://jac.jenkinslaw.org/screens/submit.gif" alt="Submit" border=0> 
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
 
-<p>
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
 
-</FORM>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+
+</div>
+
+</div>
 <!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

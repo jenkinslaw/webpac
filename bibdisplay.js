@@ -1,6 +1,6 @@
 /* 
-*  Rel 2007 "Skyline" Example Set
-*  This File Last Changed: 10 January 2008 
+*  Rel 2009B Example Set
+*  This File Last Changed: 12 Dec 2009 
 */
 
 // Dean Edwards/Matthias Miller/John Resig
@@ -27,17 +27,6 @@ if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", init, false);
 }
 
-/* for Internet Explorer */
-/*@cc_on @*/
-/*@if (@_win32)
-    document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
-    var script = document.getElementById("__ie_onload");
-    script.onreadystatechange = function() {
-        if (this.readyState == "complete") {
-            init(); // call the onload handler
-        }
-    };
-/*@end @*/
 
 /* for Safari */
 if (/WebKit/i.test(navigator.userAgent)) { // sniff
@@ -90,7 +79,7 @@ function addClass(element,value) {
 
 function stripeTables() {
     if (!document.getElementsByTagName) return false;
-    var rows = getElemByClass(document , "td" , "briefCitRow" );
+    var rows = getElemByClass(document , "td" , "briefcitCell" );
     var odd = false;
     for (var j=0; j<rows.length; j++) {
       if (odd == true) {
@@ -105,7 +94,7 @@ function stripeTables() {
 
 function highlightRows() {
   if (!document.getElementsByTagName) return false;
-  var rows = getElemByClass(document , "td" , "briefCitRow" );
+  var rows = getElemByClass(document , "td" , "briefcitCell" );
   for (var i=0; i<rows.length; i++) {
     rows[i].oldClassName = rows[i].className
     rows[i].onmouseover = function() {
@@ -119,7 +108,7 @@ function highlightRows() {
 
 function stripeSubjectTables() {
     if (!document.getElementsByTagName) return false;
-    var rows = getElemByClass(document , "tr" , "briefCitRow" );
+    var rows = getElemByClass(document , "tr" , "briefcitCell" );
     if(!rows[0]) return false;
     var odd = false;
     for (var j=0; j<rows.length; j++) {
@@ -286,4 +275,3 @@ function getElemByClass(oElm, strTagName, strClassName){
     }
     return (arrReturnElements)
 }
-

@@ -1,64 +1,78 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 24 March 2008 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Jenkins Law Library - Jenkins Catalog - The Legal Resource Portal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<title>Millennium Web Catalog</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
 </head>
-<body onload="document.forms[0].elements[1].focus();">
+<body>
 <!--{toplogo}-->
+<div class="pageContentInner">
 
-<div id="awsError">
-<br /><h2>NO ENTRIES FOUND</h2><br />
-</div>
+<h1 class="pageHeader">Keyword Search</h1>
 
-<h2 class="srchhelpHeader">Keyword Search</h2>
-<div class="srchhelpText">Type the keyword(s) in the box below then press Enter or click the Submit button.</div>
-<div class="tool">
-<form action="/search/Y" method="get" class="unpadded">
-<span class="magFive">
-<!--{submit}-->
+<div class="formsTogether" id="accessibleForm">
+<div class="form1Part">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the keyword(s) in the box below then press Enter or click the Submit button.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
 </span>
-<table border="0" class="textFix">
-<tr>
-<td align="right">Search for:</td>
-<td>
-<input type="text" name="SEARCH" size="20" value="" />
-</td>
-</tr>
-<tr>
-<td align="right">Search in the:</td>
-<td>
-	<!--{scope}-->
-</td>
-</tr>
-</table>
+<!--{search}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
 </form>
-</div>
-<div class="srchhelpText">Type the keyword you want to find. For example:
-<ul class="unpadded srchhelpList">
-<li>employment</li>
-<li>discrimination</li>
-<li>employment AND discrimination</li>
-<li>legal research cohen</li>
+</div><!--form1Part -->
+
+<div class="clear"></div>
+
+<div>
+<p>Type the keyword you want to find. For example:</p>
+<ul>
+<li>design</li>
+<li>bleachers grisham</li>
 </ul>
-</div>
-<table class="searchTipTable">
-<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
+<table class="tipsTable">
+<caption>Search Tips</caption>
 <!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br/>
+<td>Multiple words are searched together as one phrase.<br>
 <span style="text-decoration:underline">Example</span> : world health organization</td>
 </tr> -->
 <tr valign="top"><th align="left">Wildcards</th>
 <td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters. --> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br/>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
 <span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
 </tr>
 <tr valign="top"><th align="left">Boolean Operators</th>
 <td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
-<span style="text-decoration:underline">Example</span> : stocks and bonds <br/>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
 <span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
 </tr>
 <tr valign="top"><th align="left">Field limits</th>
@@ -73,10 +87,19 @@ Keyword search results are usually grouped by relevance to bring the most likely
 </tr>
 <!-- <tr valign="top"><th align="left">Proximity Operators</th>
 <td>
-Use "near" to specify words close to each other, in any order.<br/>
+Use "near" to specify words close to each other, in any order.<br>
 <span style="text-decoration:underline">Example</span> : california near university</td>
 </tr> -->
 </table>
+
+</div><!--bottom part -->
+</div><!--formsTogether -->
+</div><!-- pageContentInner -->
+
 <!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
 </body>
 </html>
