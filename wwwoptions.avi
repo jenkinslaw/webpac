@@ -62,7 +62,7 @@ RIGHT_CELL_WIDTH=18|25
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
-#STYLESHEET=/screens/styles.css #Remove OPAC-specific stylesheet
+STYLESHEET=/screens/styles_jenkins.css #Remove OPAC-specific stylesheet
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=600;URL=/
 TOPLOGO=@screens/toplogo.html

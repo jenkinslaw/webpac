@@ -1140,10 +1140,3 @@ tr.highlight { background:#FFFFE4; }
 .programregister .formRight { width:460px; }
 
 
-/*
-JENKINS THEME
-CSS intended to override /scripts/ProStyles.css, which
-we are not allowed to edit, per the Sierra manual:
-http://csdirect.iii.com/sierrahelp/Default.htm#sril_style_sheet_classes.html?Highlight=prostyles
-*/
-.main { margin-left:0px; margin-right:0px; } /*When .main class is allowed to have a margin, the content section falls below the nav menu*/
