@@ -55,14 +55,14 @@ ICON_CLEAR_FORM=<div onmousedown="this.className='pressedState';" onmouseout="th
 ICON_DELETE_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Delete Selected</span></span></div></div>
 ICON_SELECT_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Save All</span></span></div></div>
 RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Resources
-INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><script type="text/javascript" src="/screens/iiilangswitch.js"></script><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
+INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><script type="text/javascript" src="/screens/iiilangswitch.js"></script><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript">document.domain="jenkinslaw.org";</script><script type="text/javascript" src="http://www.jenkinslaw.org/jsthemer/jenkins_top.js?page_title=Catalog&leftnav=research&leftnav_highlight=2242&breadcrumbs=4347,6804"></script> #Includes JS to pull in Jenkins Theme
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
 #SSLPORT=80:443|2082:444
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
-STYLESHEET=/screens/styles.css
+#STYLESHEET=/screens/styles.css #Remove OPAC-specific stylesheet
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=600;URL=/
 TOPLOGO=@screens/toplogo.html
@@ -510,7 +510,7 @@ MF_RESULTSVIEW=tabbed,View Results Tabbed By Resource|standard,View All Results 
 MF_RETURN=true
 MF_RETURN_URL=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&amp;searchpage=simple&amp;accountid=[ACCOUNT]&amp;accountpassword=[ACCOUNT]
 MF_SEARCHINDEX=Keywords,Keywords|:CREATOR,Author|:TITLE,Title|:SUBJECT,Subject
-MF_STYLESHEET=/screens/styles.css
+#MF_STYLESHEET=/screens/styles.css #Remove opac-specific style sheet
 MF_TOPLOGO=@screens/toplogo.html
 
 # Program Display
