@@ -3,10 +3,9 @@
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 09 June 2010 -->
 <head>
-<title>Millennium Web Catalog</title>
+<title>Catalog | Jenkins Law Library</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
 <script type="text/javascript">/* <![CDATA[ */
 function iiiSearchValidate() {
 	try{
@@ -37,66 +36,26 @@ obj.submit();
 <div class="pageContentInner mainSearch">
 
 <h1 class="accessibleAddInfo">Search</h1>
-
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-
-
-<input type="hidden" id="iiiFormHandle_1">
-
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="X" selected="selected">Keyword</option>
-<option value="t">Title</option>
-<option value="s">Journal Title</option>
-<option value="a">Author</option>
-<option value="d">Subject</option>
-<option value="y">Resource Name</option>
+<form class="unpadded" action="/search~/" method="get" name="search" id="search">
+<select name="searchtype" id="searchtype" onChange="initSort()">
+<option value="X" selected="selected"> Keyword</option>
+<option value="t"> Title</option>
+<option value="a"> Author</option>
+<option value="d"> Subject</option>
+<option value="c"> Call #</option>
+<option value="i"> ISBN/ISSN</option>
 </select>
-<!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="nowrap formButtonArea">
-
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
-
-</span>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
+</td>
+<td valign="bottom">
+<input type="text" id="searcharg" name="searcharg" size="35" maxlength="75" />
+</td>
+<td valign="bottom">
+<input type="image" name="submit" src="http://jac.jenkinslaw.org/screens/go_button.gif" value="GO" onClick="_gaq.push(['_trackEvent', 'Basic Search', 'Submit Search', '']); />
+<input type="hidden" name="SORT" id="SORT" value="D" />
 </form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
 
-<div class="mainMenuContent">
-<div class="mainMenuContentLeft">
-<img src="/screens/main.jpg" height=249 width=355>
 </div>
-<div class="mainMenuContentRight">
-<ul>
-<li><a href="[encore IP/iii/encore]">Search Encore</a></li>
-<li><a href="/iii/calendar/month">Program Calendar</a></li>
-<li><a href="/ftlist">Featured Lists</a></li>
-<li><a href="/rpro">Research Pro</a></li>
-<li><a href="/search/y">Find e-resources</a></li>
-<li><a href="/illb">Interlibrary Loan</a></li>
-<li><a href="[WebPAC IP:2090]">KidsOnline</a></li>
-</ul>
-</div>
-</div>
-
-</div><!--pageContentInner -->
+<!--pageContentInner -->
 
 <!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--

@@ -62,7 +62,7 @@ RIGHT_CELL_WIDTH=18|25
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
-STYLESHEET=/screens/styles_jenkins.css #Remove OPAC-specific stylesheet
+STYLESHEET=/screens/styles_jenkins.css
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=600;URL=/
 TOPLOGO=@screens/toplogo.html
@@ -510,7 +510,7 @@ MF_RESULTSVIEW=tabbed,View Results Tabbed By Resource|standard,View All Results 
 MF_RETURN=true
 MF_RETURN_URL=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&amp;searchpage=simple&amp;accountid=[ACCOUNT]&amp;accountpassword=[ACCOUNT]
 MF_SEARCHINDEX=Keywords,Keywords|:CREATOR,Author|:TITLE,Title|:SUBJECT,Subject
-#MF_STYLESHEET=/screens/styles.css #Remove opac-specific style sheet
+#MF_STYLESHEET=/screens/styles.css
 MF_TOPLOGO=@screens/toplogo.html
 
 # Program Display
