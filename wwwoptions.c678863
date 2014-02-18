@@ -1,0 +1,133 @@
+BIBLOC=true
+BODYPARAM=bgcolor=#FFFFFF link=#000066 vlink=#333399 alink=#993333 text=#000000 topmargin=0 marginheight=0 marginwidth=0 leftmargin=0
+MY_WEBPAC=false,true
+FRAMEURL_PAT=0
+TOPLOGO=<style type="text/css"><!-- A.advancedsearch { font-family: arial, helvetica, sans-serif; font-size: 9 } A.path { font-family: arial, helvetica, sans-serif; font-size: 11px; line-height: .8; color: #666699 }.path { font-family: arial, helvetica, sans-serif; font-size: 11px; line-height: .8; color: #666699 }.announce { font-family: arial, helvetica, sans-serif; font-size: 12px }.body { font-family: arial; font-size: 12px }.welcome { color: #CC6600; font-size: 16px; font-family: arial; }.title { color: #CC6600; font-size: 20px; font-family: arial; }A.menu:link { color: #FFFFFF; text-decoration: none; font-family: arial; font-size: 11.5px; line-height: 1.4 }A.menu:visited { color: #FFFFFF; text-decoration: none; font-family: arial; font-size: 11.5px; line-height: 1.4 }A.menu:hover { color: #cc9966; text-decoration: underline; font-family: arial, helvetica, sans-serif; font-size: 11.5px; line-height: 1.4 }.homeheader { font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #CC6600; font-weight: bold; }--></style><table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0"><tr width="100%"><td bgcolor="#000066" colspan="1" valign="top" align="left"><img src="http://www.jenkinslaw.org/images/spacer.gif" width="5" height="1" alt=""><img src="http://www.jenkinslaw.org/images/entrance_anniv.jpg" width="125" height="55" border="0" alt="Jenkins Law Library"></td><td bgcolor="#000066" colspan="4" background="http://www.jenkinslaw.org/images/anniv_tag.gif"><img src="http://www.jenkinslaw.org/images/spacer.gif" width="1" height="55" alt=""></td></tr> <tr width="100%"><td bgcolor="#000066" valign="top"><table width="130" border="0" cellpadding="0" cellspacing="0"><!--<tr><td bgcolor="#000066" width="8">&nbsp;</td><td bgcolor="#000066">&nbsp;</td></tr>--><tr><td height="100%" bgcolor="#000066" width="8" valign="top">&nbsp;</td><td height="100%" bgcolor="#000066" valign="top"><img src="http://www.jenkinslaw.org/images/spacer.gif" height="15"><br><!--<font color="#999999" size="1" face="arial,
+ helvetica, sans-serif">Q U I C K &nbsp;L I N K S:</font><br><img src="/
+images/spacer.gif" height="3"><br>--><a href="http://www.jenkinslaw.org/collection/index.shtml"><img src="http://www.jenkinslaw.org/images/doityourself-caps.gif" border="0"></a><br><a class="menu" href="http://jac.jenkinslaw.org">Search Jenkins Catalog</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/othercats/index.shtml">Search Other Catalogs</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/legal/index.shtml">Legal Research Links</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/nonlegal/index.shtml">Nonlegal Research Links</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/lpi.shtml">Legal Periodicals</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/pa-leghist.shtml">PA Legislative Histories</a><br><a class="menu" href="http://www.jenkinslaw.org/collection/researchguides/index.shtml">Research Guides</a><br><br><!--<a class="menu" href="http://www.jenkinslaw.org/collection/recsbriefs.shtml">Briefs and Records</a><br>--><a href="http://www.jenkinslaw.org/services/index.shtml"><img src="http://www.jenkinslaw.org/images/letusdoit-caps.gif" border="0"></a><br><a class="menu" href="http://www.jenkinslaw.org/services/reference.shtml">Ask a Librarian</a><br><a class="menu" href="http://www.jenkinslaw.org/services/documents.shtml">Order Documents</a><br><a class="menu" href="http://www.jenkinslaw.org/services/jsearch.shtml">Order Research Work</a><br><a class="menu" href="http://www.jenkinslaw.org/services/recsbriefs.shtml">Court Records &amp; Briefs</a><br><br><a href="http://www.jenkinslaw.org/prodevelop/index.shtml"><img src="http://www.jenkinslaw.org/images/learnhow-caps.gif" border="0"></a><br><a class="menu" href="http://www.jenkinslaw.org/prodevelop/learning/index.shtml">CLE Classes</a><br><a class="menu" href="http://www.jenkinslaw.org/prodevelop/workshops.shtml">Technology Workshops</a><br><a class="menu" href="http://www.jenkinslaw.org/prodevelop/welcome.shtml">Jenkins Research<br>&nbsp;Techniques course</a><br>
+<br><a href="http://www.jenkinslaw.org/about/index.shtml"><img src="http://www.jenkinslaw.org/images/aboutus-caps.gif" border="0"></a><br><a class="menu" href="http://www.jenkinslaw.org/about/membership/index.shtml">Joining Jenkins</a><br><a class="menu" href="http://www.jenkinslaw.org/about/history/index.shtml">Jenkins History</a><br><a class="menu" href="http://www.jenkinslaw.org/about/sitemap.shtml">Site Map</a><br><a class="menu" href="http://www.jenkinslaw.org/about/generalinfo/">General Information</a><br><a class="menu" href="http://www.jenkinslaw.org/about/contact.shtml">Contact Us</a></td></tr></table></td><td valign="top"><img src="http://www.jenkinslaw.org/images/bluecorner.gif" width="25"></td><td valign="top" align="left" width="100%"><!--NEW MENU STARTS--><table border="0" cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" align="center"><tr valign="middle"><td align=center><a href="http://www.jenkinslaw.org/collection/index.shtml"><img src="http://www.jenkinslaw.org/images/menu_collection.gif" width=113 height=22 border=0 alt="Research Tools and Catalog"></a></td><td align=center width=15><img src="http://www.jenkinslaw.org/images/divider.gif" width=13 height=22 border=0 alt=""></td><td align=center><a href="http://www.jenkinslaw.org/services/index.shtml"><img src="http://www.jenkinslaw.org/images/menu_services.gif" width=142 height=22 border=0 alt="Information and Research Services"></a></td><td align=center width=15><img src="http://www.jenkinslaw.org/images/divider.gif" width=13 height=22 border=0 alt=""></td><td align=center><a href="http://www.jenkinslaw.org/prodevelop/index.shtml"><img src="http://www.jenkinslaw.org/images/menu_prodevelop.gif" width=113 height=22 border=0 alt="Professional Development"></a></td><td align=center width=15><img src="http://www.jenkinslaw.org/images/divider.gif" width=13 height=22 border=0 alt=""></td><td align=center><a href="http://www.jenkinslaw.org/about/index.shtml"><img src="http://www.jenkinslaw.org/images/menu_about.gif" width=42 height=22 border=0 alt="About Us"></a></td></tr><tr><td colspan="7"><hr noshade size="1"></td></tr></table><!--NEW MENU ENDS--><font face="arial, helvetica, sans-serif" size="2">
+
+BOTLOGO=</td> <td valign="top"> <img src="http://www.jenkinslaw.org/images/bluedotscorner.gif"> </td> <td bgcolor="#999966" align="right" valign="top"> <table width="150" cellpadding="2" cellspacing="0" border=0> <!--<tr> <td bgcolor="#999966">&nbsp;</td> <td bgcolor="#999966"> <font color="#FFFFFF" face="arial" size="1">&nbsp;</font> </td> <td bgcolor="#999966">&nbsp;</td> </tr>--> <tr> <td background="http://www.jenkinslaw.org/images/bluedots.gif">&nbsp;</td> <td background="http://www.jenkinslaw.org/images/bluedots.gif" bgcolor="#666633"> <font color="#FFFFFF" face="arial, helvetica, sans-serif" size="1">SITE SEARCH</font> </td> <td background="http://www.jenkinslaw.org/images/bluedots.gif">&nbsp;</td> </tr> <tr> <td bgcolor="#999966">&nbsp;</td> <td align="right" bgcolor="#999966" valign="top"> <form method=GET action="http://www.jenkinslaw.org/cgi-bin/search/search.pl" name="SearchForm"><input name="Terms" size=15 maxlength=800 value=""><br><font face="arial, helvetica, sans-serif" size="1"><a href="http://www.jenkinslaw.org/search/">advanced search</a></font><img src="/images/spacer.gif" height="1" width="3" alt=""><input type=submit value="go!"> <script language="JavaScript"> <!--document.SearchForm.Terms.focus();// --> </script> </form> </td> <td bgcolor="#999966">&nbsp;</td> </tr> <tr> <td width="100%" colspan="3"> <table width="100%" bgcolor="#999966" cellpadding="1" cellspacing="0" border="0"> <tr> <td colspan=3 background="http://www.jenkinslaw.org/images/bluedots.gif"> <table cellpadding="5" cellspacing="0" border="0"><tr> <td> <font face="arial, helvetica, sans-serif" size="1" color="#FFFFFF">JAC FEATURES:</font> </td> </tr> </table> </td> </tr> <tr> <td background="http://www.jenkinslaw.org/images/bluedots.gif"> <img src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=1 border=0 alt=""> </td> <td bgcolor="#FFFFFF" valign="top"> <table cellpadding="
+4" cellspacing="0" border="0"> <tr> <td bgcolor="#FFFFFF"> <small> <span class="announce"> <p> <a href="http://www.jenkinslaw.org/collection/jac/usingjac.shtml"><b>Using JAC</b></a> <p> <a href="http://jac.jenkinslaw.org/ftlist"> <b>New Acquisitions Plus</b> </a> <p> <a href="http://jac.jenkinslaw.org/patroninfo"> <b>What Have I Borrowed?</b> </a> <p> <a href="http://jac.jenkinslaw.org/acquire"> <b>Jenkins Should Buy...</b> </a> <p> <a href="http://www.jenkinslaw.org/services/documents.shtml"> <b>Document Delivery</b> </a>   <p> <a href="http://jac.jenkinslaw.org/suggest"> <b>Suggestion Box</b> </a> <p><a href="http://www.jenkinslaw.org/collection/jac/brokenlink.shtml"><b>Report A Broken Link</b></a> <p> <a href="http://www.jenkinslaw.org/collection/jac/emailhelp.shtml"> <b>Save/Email Results</b> </a>   <p> <a href="http://jac.jenkinslaw.org/#cantfind"> <b>Can't Find It?</b> </a> <p> <a href="http://www.jenkinslaw.org/collection/jac/jacpdfhelp.shtml"><b>PDF Help Guide</b></a> <p> </span> </small> </td> </tr> </table> </td> <td background="http://www.jenkinslaw.org/images/bluedots.gif"> <img src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=1 border=0 alt=""> </td> </tr> <tr> <td colspan=3 background="http://www.jenkinslaw.org/images/bluedots.gif"> <img src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=1 border=0 alt=""> </td> </tr> </table> </td> </tr> <tr> <td colspan="2"> </td> </tr> </table> </td> </tr> <tr> <td bgcolor="#000066">&nbsp;</td> <td>&nbsp;</td> <td valign="top"> <hr noshade size="1"> <font face="arial, helvetica, sans-serif" color="#999966" size="1"> <br> JAC powered by <a href="http://www.iii.com">Innovative Interfaces, Inc.</a> (INNOPAC)<br> Copyright &copy; 2003, Jenkins Law Library.  All rights reserved.<br> <a href="http://www.jenkinslaw.org/about/disclaimer.shtml">Disclaimer</a> | <a href="http://www.jenkinslaw.org/about/privacy.shtml">Privacy Policy</a> | <a href="http://www.jenkinslaw.org/about/contact.shtml">Contact Us</a> <br> <br> </font> </td> <td>&nbsp;</td> <td bgcolor="#999966">&nbsp;</td> </tr> </table>
+
+RECORDFRAME_STAFF
+STAFF=3
+NO_REVERIFY=acq,wam
+PREF_SEARCHES_P3=5|Y
+PREFTEXT
+
+
+FLD_LABEL_VERBATIM=True
+#TIMEOUT=180;URL=/search/ target="_top"
+TIMEOUT=360;URL=/search/
+STATGROUP=login
+DROP_DOWN=atdwio
+EXTENDED_a=ABCH
+EXTENDED_t=ABCH
+INDEX_EXT=c
+FRAMEURL=0
+HOLDINGS_POS=cath
+
+EXPORT_SELECT_TABLE=Sendto:email,local,browser|Format:brief,procite
+EMAILOP=From JAC (Jenkins Automated Catalog)|exporter|big5 
+EXPORT
+
+LINK856TEXT=Link to:
+#LINK856TEXT=Online Version:
+#DISPLAY_856=z
+DISPLAY_856=3z
+#DISPLAY_856=z3
+
+CLEAR_PRIVATE_INFO=true
+OFFER_HISTORY=TRUE
+#REQUEST=I want to place a reservation on this item|item|item
+REQUEST_INSTRUCTION= You must have a valid library card to request an item. <B><BR> Only circulating and on order items can be requested.<BR></B> To request copy of articles from our collection contact <A HREF="http://www.jenkinslaw.org/services/express.shtml3">Jenkins Document Express</A>.<BR>Any <B>S</B>pecial <B>I</B>nstructions?
+
+CHECKIN_BGCOLOR=ARRIVED=#FFFFCC|EXPECTED=#CCCC99|TOBIND/BOUND=#99CCFF|LATE=#CCCCCC|OTHER=#9999CC
+
+CHECKIN_FONTCOLOR=ARRIVED=BLACK|EXPECTED=BLACK|TOBIND/BOUND=BLACK|LATE=RED|OTHER=BLACK
+
+SHOWOREC=no_rdate
+DISPLAY_245=atd
+CHECKINat=/screens/info_on_cat.html
+
+SPECIAL CHARACTERS
+KEYWORD_COLOR=Y|all|blue
+MARC=no
+NOSEARCH=nub
+PSTARTOVER=screens/opacmenu.html
+XSTARTOVER=/screens/opacmenu.html
+
+FEATURED_LIST=1,2,3,4,5|New Acquisitions Plus|Topic|#Titles
+BUT_ANOTHER=/screens/b2_another.gif
+BUT_BIBEXPORT=/screens/b_export.gif
+BUT_BRIEF=/screens/b2_brief.gif
+BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
+BUT_ENCYCPD=/screens/b_encycpd.gif 
+BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif 
+BUT_EXTENDED=/screens/b2_extended.gif
+BUT_FULL_TEXT=/sceens/b_fulltxt.gif
+BUT_LIMIT=/screens/b2_limit.gif
+BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
+BUT_NEWSRCH=/screens/b2_newsrch.gif
+BUT_NEXTPAGE=/screens/b3_nextpage.gif
+BUT_NEXTREC=/screens/b3_nextrec.gif
+BUT_PREVPAGE=/screens/b2_prevpage.gif
+BUT_PREVREC=/screens/b2_prevrec.gif
+BUT_PREVSCRN=/screens/b2_prevscrn.gif
+BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
+BUT_REQUEST=/screens/b_request.gif
+BUT_RET2CRS=/screens/b_ret2crs.gif
+BUT_RET2FEAT=/screens/b2_ret2feat.gif
+BUT_RET2PREC=/screens/b_ret2pat.gif
+BUT_RETHOME=/screens/b_rethome.gif
+BUT_RTRNTB=/screens/b2_rtrntb.gif
+BUT_WORDSRCH=/screens/b2_wordsrch.gif
+BUT_CLOSEWN=/screens/b_ret2cat.gif
+BUT_CARDFORM_LIN=/screens/linedisp.gif
+BUT_CARDFORM_BOX=/screens/boxdisp.gif
+BUT_LIMAVAIL=/screens/limavail.gif
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+BUT_VIEW_SAVES=/screens/b_bookcart.gif
+BUT_MODIFY=/screens/modify.gif
+BUT_SHOWSIM=/screens/showsimilar.gif
+
+LOC_ga=/screens/loc_ga.html
+LOC_pre=/screens/loc_pre.html 
+LOC_vf=/screens/loc_vf.html
+LOC_dir=/screens/loc_dir.html
+LOC_adm=/screens/loc_adm.html
+LOC_auto=/screens/loc_auto.html
+LOC_cas=/screens/loc_cas.html
+LOC_cat=/screens/loc_cat.html
+LOC_cdo=/screens/loc_cdo.html
+LOC_circ=/screens/loc_circ.html
+LOC_co=/screens/loc_co.html
+LOC_col=/screens/loc_col.html
+LOC_cs=/screens/loc_cs.html
+LOC_dd=/screens/loc_dd.html
+LOC_doc=/screens/loc_doc.html
+LOC_eng=/screens/loc_eng.html
+LOC_ib=/screens/loc_ib.html
+LOC_ill=/screens/loc_ill.html
+LOC_itbl=/screens/loc_itbl.html
+LOC_ll=/screens/loc_ll.html
+LOC_mem=/screens/loc_mem.html
+LOC_micro=/screens/loc_micro.html
+LOC_net=/screens/loc_net.html
+LOC_ntbl=/screens/loc_ntbl.html
+LOC_os=/screens/loc_os.html
+LOC_over=/screens/loc_over.html
+LOC_penna=/screens/loc_penna.html
+LOC_per=/screens/loc_per.html
+LOC_rb=/screens/loc_rb.html
+LOC_ref=/screens/loc_ref.html
+LOC_remot=/screens/loc_remot.html
+LOC_state=/screens/loc_state.html
+LOC_text=/screens/loc_text.html
+LOC_tr=/screens/loc_tr.html
+LOC_us=/screens/loc_us.html
+LOC_video=/screens/loc_video.html
+LOC_wmo=/screens/loc_wmo.html
+LOC_wp=/screens/loc_wp.html
+LOC_refdk=/screens/loc_refdk.html

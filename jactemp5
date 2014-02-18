@@ -1,0 +1,213 @@
+<!doctype html public "-//w3c//dtd html 4.0//en">
+<html>
+<head>
+<!--
+
+   Jenkins Law Library
+   Website consulting by Zero Defect Design | www.zerodefect.net
+   Copyright (c) 1996-2001 Jenkins Law Library
+   All rights reserved
+
+-->
+<title>Jenkins Catalog</title>
+
+<script src="http://www.jenkinslaw.org/collection/jac/header.js"></script>
+
+<style type="text/css">
+<!--
+
+.path {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   color: #999966;
+   font-size: 13px;
+   }
+
+.pathlink {
+   text-decoration: none;
+   }
+
+.banner {
+   color: #993300;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   }
+
+-->
+</style>
+
+</head>
+<body bgcolor="#FFFFFF"
+   link="#102264" vlink="#102264" alink="#660000"
+   topmargin=10 leftmargin=10 marginheight=10 marginwidth=10>
+
+<!-- menu -->
+<table width="100%" cellpadding=0 cellspacing=1 border=0>
+<tr valign=middle bgcolor="#CCCC99">
+   <td align=center bgcolor="#706E8A"><a href="http://www.jenkinslaw.org"><img
+      src="http://www.jenkinslaw.org/images/menu/jll.gif" width=119 height=19 border=0 alt="Home" name="jllhome"></a></td>
+   <td align=center><a href="http://www.jenkinslaw.org/services"><img
+      src="http://www.jenkinslaw.org/images/menu/services.gif" width=60 height=19
+      border=0 alt="Services" name="services"></a></td>
+   <td align=center><a href="http://www.jenkinslaw.org/collection"><img
+      src="http://www.jenkinslaw.org/images/menu/collection.gif" width=92 height=19
+      border=0 alt="Our Collection" name="collection"></a></td>
+   <td align=center><a href="http://jac.jenkinslaw.org/"><img
+      src="http://www.jenkinslaw.org/images/menu/catalog.gif" width=98 height=19
+      border=0 alt="Catalog Search" name="catalog"></a></td>
+   <td align=center><a href="http://www.jenkinslaw.org/research"><img
+      src="http://www.jenkinslaw.org/images/menu/research.gif" width=97 height=19
+      border=0 alt="Research Links" name="research"></a></td>
+   <td align=center><a href="http://www.jenkinslaw.org/about"><img
+      src="http://www.jenkinslaw.org/images/menu/about.gif" width=64 height=19
+      border=0 alt="About Us" name="about"></a></td>
+   <td align=center><a href="http://www.jenkinslaw.org/search"><img
+      src="http://www.jenkinslaw.org/images/menu/search.gif" width=51 height=19
+      border=0 alt="Search Jenkinslaw.org" name="search"></a></td>
+</tr>
+<tr>
+   <td colspan=7><img src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=8
+      border=0 alt=""></td>
+</tr>
+</table>
+
+
+<!-- banner -->
+<font face="Verdana, Arial, sans-serif" size=5 color="#993300" class="banner">
+Jenkins Automated Catalog
+</font>
+<font face="Arial, Helvetica, sans-serif" size=2>
+<hr noshade size=1>
+
+
+
+<!-- sub-table for most-right column box -->
+		<table cellpadding=0 cellspacing=0 border=0 width=135 align=right>
+
+			<tr>
+
+					<td valign="top"><!--column three---but, now it's column 1-->
+					<table cellpadding=5 cellspacing=0 border=0 width=135 align=left>
+						<tr>
+						<td bgcolor="#000000">
+						<table cellpadding=0 cellspacing=0 border=0  align=left>
+						<tr>
+							<td valign="top" align=middle bgcolor="#000000"><font face="Arial, helvetica, sans-serif" size=2 class="announce"
+							color="#FFFFFF"><b>Jenkins Notes...</b></font></td>
+						</tr>
+						</table>
+						</td>
+						</tr>
+						<tr><td bgcolor="#F1ECD6">
+						<table cellpadding=0 cellspacing=0 border=0 width=135 align=left>
+						<tr>
+							<td bgcolor="#F1ECD6" valign="top">
+							<table cellpadding=0 cellspacing=0 border=0 width=135 align=left>
+							<tr>
+								<td valign="top" bgcolor="#F1ECD6"><a href="http://www.jenkinslaw.org/services/workshops.shtml"><img src="http://www.jenkinslaw.org/images/student.gif" alt="Professional Development" border="0"></a>&nbsp;</td>
+								<td bgcolor="#F1ECD6" valign="bottom"><font face="Arial, helvetica, sans-serif" size=2>&nbsp;Check out our &nbsp;<a href="http://www.jenkinslaw.org/services/workshops.shtml"><b>Winter 2001 &nbsp;Technology</b></a>
+								</td>
+							</tr>
+							</table>
+							</td>
+						</tr>
+						<tr>
+							<td bgcolor="#F1ECD6"><font face="Arial, helvetica, sans-serif" size=2><a href="http://www.jenkinslaw.org/services/workshops.shtml"><b>Workshop</b></a> series.</td>
+						</tr>
+						<tr>
+							<td bgcolor="#F1ECD6"><font face="Arial, helvetica, sans-serif" size=2>
+	   	    				<img src="http://www.jenkinslaw.org/images/spacer.gif" width="1" height="4"><br>
+	   	    				<b>Coming up:</b><br><a href="http://www.jenkinslaw.org/services/workshops.shtml#techlawoffice"><b>Q&A for Technology in the Law Office</b></a> with ESQTech.</td>
+						</tr>
+						</table <!--close the announcements--></td></tr>
+						<tr bgcolor="#F1ECD6">
+							<td><font face="arial, helvetica, sans-serif" size=2 class="announce">
+							<img src="http://www.jenkinslaw.org/images/icons/new5-trans1L.gif">&nbsp;<a href="http://www.jenkinslaw.org/collection/heinol.shtml"><b>Full Text Periodicals Online</b></a><br>
+							Classic legal docu-<br>ments, law school reviews &amp; periodicals available remotely for <a href="http://www.jenkinslaw.org/about/membership/index.shtml"><b>members</b></a> through <a href="http://www.jenkinslaw.org/collection/heinol.shtml"><b>Hein Online</b></a>.
+							</td>
+			</tr>
+					</table <!--closes cloumn 3-->
+					</td>
+			</tr>
+
+			<tr>
+			   	<td><img src="http://www.jenkinslaw.org/images/spacer.gif" width=140 height=120 border=0 alt="">
+			   	</td>
+			</tr>
+
+		</table <!--closes cloumn 3-->
+
+
+<!-- ============================== -->
+
+<b>Search the Jenkins Catalog by...</b>
+<p>
+<table>
+<tr><td valign="top"><font face="arial,helvetica,sans-serif" size="2">
+<ul>
+	<li><a href="http://jac.jenkinslaw.org/search/a"><b>Author</b></a>
+	<p>
+	<li><a href="http://jac.jenkinslaw.org/search/w"><b>Keywords</b></a>
+	<p>
+	<li><a href="http://jac.jenkinslaw.org/search/t"><b>Title or Series</b></a>
+	<p>
+	<li><a href="http://jac.jenkinslaw.org/search/q"><b>Author &amp; 	Title</b></a>
+</ul></font></td>
+<td valign="top"><font face="arial,helvetica,sans-serif" size="2">
+<ul>
+	<li><a href="http://jac.jenkinslaw.org/search/d"><b>Subject</b></a>
+	<p>
+	<li><a href="http://jac.jenkinslaw.org/search/c"><b>Call Number</b></a>
+	<p>
+	<li><a href="http://jac.jenkinslaw.org/search/i"><b>ISBN/ISSN</b></a>
+</ul></font></td></tr></table>
+
+<p>
+<b>Can't find it? Try:</b>
+<p>
+<li>Catalogs from <a href="http://www.jenkinslaw.org/research/othercats/"><b>Other Libraries</b></a>
+<li>Searching <a href="http://www.jenkinslaw.org/collection/lpi.shtml"><b>Legal Periodicals</b></a> (members &amp; on-site patrons only)
+<li>Jenkins <a href="http://www.jenkinslaw.org/research/index.shtml"><b>Research Links</b></a> Collection<br>
+<li>Jenkins <a href="http://www.jenkinslaw.org/services/interlibloan.shtml"><b>Out-of-House Document Delivery</b></a> Service<br>
+<p>
+<b>Useful JAC Features:</b>
+<p>
+<li><a href="http://jac.jenkinslaw.org/ftlist"><b>New Acquisitions Plus</b></a>
+<li><a href="http://jac.jenkinslaw.org/patroninfo"><b>What have I borrowed?</b></a>
+<li><a href="http://jac.jenkinslaw.org/acquire"><b>Jenkins Should Buy...</b></a>
+<li><a href="http://jac.jenkinslaw.org/suggest"><b>Suggestion Box</b></a>
+
+<p>
+
+
+For help using a mouse, visit <a href="http://www.ckls.org/%7Ecrippel/computerlab/tutorials/mouse/page1.html"><b>Mousercise</b></a>.
+<p>
+Having trouble? <a href="mailto:kpiechnik@jenkinslaw.org">Email</a> or call Katrina Piechnik, Head of Catalog Services, at 215.574.7907.
+<p>
+<p>
+<font face="arial,helvetica,sans-serif" size="1"><b>Netscape 6 users:</b><br>Netscape's newest upgrade (6.0) is working problematically with online databases, including the Innovative system we use. It is recommended that you keep an older version of your browser for these circumstances on hand.</font>
+
+<br clear=all>
+<hr noshade size=1>
+</font>
+<font face="Arial, Helvetica, sans-serif" size=1>
+<a href="http://www.jenkinslaw.org"><b>Jenkins Law Library</b></a> |
+<a href="http://www.jenkinslaw.org/services">Services</a> |
+<a href="http://www.jenkinslaw.org/collection">Our Collection</a> |
+<a href="http://jac.jenkinslaw.org/">Catalog Search</a> |
+<a href="http://www.jenkinslaw.org/research">Research Links</a> |
+<a href="http://www.jenkinslaw.org/about">About Us</a> |
+<a href="http://www.jenkinslaw.org/search">Search</a>
+<p>
+
+
+Copyright &copy; 2001, Jenkins Law Library.  All rights reserved.<br>
+<a href="http://www.jenkinslaw.org/about/disclaimer.shtml">Disclaimer</a> |
+<a href="http://www.jenkinslaw.org/about/contact.shtml">Contact Us</a>
+
+<p>
+</font>
+</body>
+</html>
+
+
+

@@ -1,0 +1,61 @@
+BODYPARAM=bgcolor=#FFFFFF link=#223366 vlink=#880000 alink=#880000 text=#000000 background=/screens/bg.gif marginwidth=5 leftmargin=5
+TOPLOGO=<center><img src="/screens/h3_jac.gif" width=250 height=30></center>
+BOTLOGO=<center><font size=1>Copyright &copy; 1997, <a href="http://www.jenkinslaw.org" target="_top"><b>Jenkins Law Library</b></a></font><br><br></center>
+TIMEOUT=300;URL=/search/
+STATGROUP=login
+DROP_DOWN=atdW
+BIBLOC=1
+EXTENDED=3
+INDEX_EXT=c
+FRAMEURL=15
+HOLDINGS_POS=cathp
+EXPORT_SELECT_TABLE=Sendto:email,local|Format:marc,full,procite
+EMAILOP=From the Jenkins Law Library Web catalog|exporter|big5
+
+
+CLEAR_PRIVATE_INFO=true
+
+#REQUEST=I want to place a reservation on this item|item|item
+REQUEST_INSTRUCTION= You must have a valid library card to request an item. <B><BR> Only circulating and on order items can be requested.<BR></B> To request copy of articles from our collection contact <A HREF="http://www.jenkinslaw.org/services/express.shtml3">Jenkins Document Express</A>.<BR>Any <B>S</B>pecial <B>I</B>nstructions?
+
+SHOWOREC=no_rdate
+
+LOC_cat=/screens/info_on_cat.html
+
+KEYWORD_RED=Y|^5..|RED
+MARC=no
+NOSEARCH=nub
+PSTARTOVER=/screens/mainmenu.html
+# RECORDFRAME=32,48,20
+#
+# OPTION BUTTONS
+FEATURED_LIST=40,37,39,38,36|SELECTED TITLES|<b>Topic</b>|<b>#Titles</b>
+BUT_ANOTHER=/screens/b2_another.gif
+BUT_BIBEXPORT=/screens/b_export.gif
+BUT_BRIEF=/screens/b2_brief.gif
+BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
+BUT_ENCYCPD=/screens/b_encycpd.gif
+BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+BUT_EXTENDED=/screens/b2_extended.gif
+BUT_FULL_TEXT=/sceens/b_fulltxt.gif
+BUT_LIMIT=/screens/b2_limit.gif
+BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
+BUT_NEWSRCH=/screens/b2_newsrch.gif
+BUT_NEXTPAGE=/screens/b3_nextpage.gif
+BUT_NEXTREC=/screens/b3_nextrec.gif
+BUT_PREVPAGE=/screens/b2_prevpage.gif
+BUT_PREVREC=/screens/b2_prevrec.gif
+BUT_PREVSCRN=/screens/b2_prevscrn.gif
+BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
+BUT_REQUEST=/screens/b_request.gif
+BUT_RET2CRS=/screens/b_ret2crs.gif
+BUT_RET2FEAT=/screens/b2_ret2feat.gif
+BUT_RET2PREC=/screens/b_ret2pat.gif
+BUT_RETHOME=/screens/b_rethome.gif
+BUT_RTRNTB=/screens/b2_rtrntb.gif
+BUT_WORDSRCH=/screens/b2_wordsrch.gif
+BUT_CLOSEWN=/screens/b_ret2cat.gif
+BUT_CARDFORM_LIN=/screens/linedisp.gif
+BUT_CARDFORM_BOX=/screens/boxdisp.gif
+BUT_LIMAVAIL=/screens/limavail.gif
+BUT_UNLIMAVAIL=/screens/unlimavail.gif

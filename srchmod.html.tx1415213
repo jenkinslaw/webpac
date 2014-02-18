@@ -1,0 +1,88 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<head>
+<title>Jenkins Law Library - Jenkins Catalog - The Legal Resource Portal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+</head>
+<body onload="document.forms[0].elements[1].focus();">
+<!--{toplogo}-->
+<table width="100%">
+<tr valign="middle">
+<td rowspan="2">
+<!--{patron}-->
+</td>
+</tr>
+<tr valign="top" align="right">
+<td >
+<!--{prevpage}-->
+</td>
+<td>
+<!--{logout}-->
+</td>
+<td>
+<!--{return}-->
+</td></tr></table>
+<h2 class="srchhelpHeader">Jenkins Catalog Limit/Sort Search</h2>
+<div class="advSrchtool">
+<!--{formbegin}-->
+<div class="srchhelpText">
+You searched for the
+<!--{searchtypeindex}-->
+
+<!--{searchterm}-->
+-
+<!--{entriesfoundnum}-->
+ entries found.
+</div>
+<div class="srchhelpText">
+Please fill in the form, select criteria to limit by, and click Submit. 
+</div>
+<!--{iferr}-->
+<br/>
+<div class="srchhelpText">
+<!--{errmsg}-->
+</div>
+<!--{xif}-->
+<div style="float:right; margin:0 6px 0 2px;">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+<table class="textFix" cellpadding="5">
+<tr valign="middle">
+<td class="srchhelpText">Location:</td>
+<td>
+<!--{WHERE_select}-->
+</td>
+</tr>
+<tr valign="middle">
+<td class="srchhelpText">Material type:</td>
+<td>
+<!--{MATERIAL_select}-->
+</td>
+</tr>
+<tr valign="middle">
+	<td  class="srchhelpText"></td>
+<td>
+	<!--{LANGUAGE_select}-->
+</td>
+</tr>
+</table>
+<div class="srchhelpText">Year:
+<!--{YEAR_select}-->
+</div>
+
+<div>
+<!--{TITLE_label}-->
+<!--{TITLE_select}-->
+</div>
+<br/>
+<div class="srchhelpText">
+<!--{sort}-->
+</div>
+<!--{formend}-->
+</div>
+<!--{botlogo}-->
+</body>
+</html>

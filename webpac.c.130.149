@@ -1,0 +1,280 @@
+webpac.c
+110.130
+11736 11736 23487 23487 zzz21850.part2
+set noai
+1601,1606d
+1387,1533d
+1365c
+static int
+.
+1351c
+static int
+.
+1322,1324d
+1318,1320c
+set_webpac_debug_dir();
+.
+1312c
+		case 'f': strcpy(wwwoptions_get_wwwoptions_name(),optarg); break;
+.
+1308c
+		case 'g': html_set_holdings_info('F',optarg); break;
+.
+1268,1272c
+wwwoptions_cleanup_memory();
+.
+1088,1265d
+893,1086d
+831a
+/* REQUEST handlers, simple */
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+.
+826,829c
+/* 
+ * Can be: /patroninfo
+ * Can be: /patroninfo*eng
+ * Can be: /patroninfo*eng/holds
+ *                        /etc.
+ * Note htmlpatron.c can either take the leading slash or leave it,
+ * but will need at least a pointer to NULL ("") to start things 
+ * up (to display its patron info entry form).
+ */
+char * start_point = CNULL;
+       
+if( ! URL || ! *URL ) return( CNULL );
+URL++;
+if( ! *URL ) return( "" ); 
+
+start_point = strchr( URL, '/' );
+if( ! start_point ) return( "" );
+start_point++;
+return( start_point );
+.
+823,824c
+static char *
+find_patroninfo_URL_start_point( char * URL )
+.
+818,820c
+start_point = strchr( URL, '/' );
+if( ! start_point || ! *start_point ) return( CNULL );
+start_point++;
+return( start_point );
+.
+816c
+/* 
+ * Can be: /search*eng/asmith
+ *         /search*chi/asmith
+ *         /search/asmith
+ *
+ * Requests such as "/search" have already been handled. Note
+ * htmlbrowse.c expects the leading slash to be gone.
+ */
+char * start_point = CNULL;
+       
+if( ! URL || ! *URL ) return( CNULL );
+URL++;
+if( ! *URL ) return( URL );
+.
+811,814c
+static char * 
+find_OPAC_URL_start_point( char * URL )
+.
+805d
+798,800c
+	return process_cisti_order( req+13,
+	                            wwwoptions_get_Cisti_url(),
+	                            wwwoptions_get_Cisti_top_html0(),
+	                            wwwoptions_get_Cisti_top_html1(),
+	                            wwwoptions_get_Cisti_top_html2(),
+	                            wwwoptions_get_Cisti_bot_html0(),
+	                            wwwoptions_get_Cisti_bot_html1(),
+	                            wwwoptions_get_Cisti_bot_html2() );
+.
+793a
+if(!strncmp(req,"/extlang",8)) return html_select_extlang(req+8);
+.
+783c
+if(!strncmp(req,"/patroninfo",11))
+	{
+	char * start_point = find_patroninfo_URL_start_point( req );
+	return( html_request_patron( start_point ) );
+	}
+.
+781c
+	return(  htbrowse( find_OPAC_URL_start_point( req ), TRUE ) );
+.
+729a
+return( TRUE );
+.
+721a
+if( ! link || ! *link ) return( FALSE );
+
+.
+717a
+html_select_extlang(char *req)
+{
+	pathname s;
+
+	if ( !*req || !strcasecmp(req+1,"eng") )
+	{
+		putenvf("EXTLANG=");
+		strcpy(s,"screens/mainmenu.html");
+	}
+	else
+	{
+		putenvf("EXTLANG=%s",req+1);
+		sprintf(s,"screens/mainmenu_%s.html",req+1);
+		if (!c_file_exists(s)) strcpy(s,"screens/mainmenu.html");
+	}
+	set_scope_mask( "" );    /* back to entire collection */
+	html_putit(s,0,0);       /* respond to the browser */
+	kill(getppid(),SIGKILL); /* kill parent */
+	execvp(gargv[0],gargv);  /* reload webpac with new ext. language */
+}
+/*-------------------------------------------------------------------*/
+static int
+.
+716a
+/*
+ * EXTLANG: Note that only one external language is supported.
+ */
+.
+712a
+		ptr += 3; if (*ptr) ptr++;
+		}
+.
+708c
+	for (ptr = list; *ptr; )
+		{
+.
+644a
+
+#ifdef GET_LANGUAGE_FROM_SITECONFIG_H
+/*
+ * This function gets the language name from siteconfig.h.
+ * I coded this because it is theoretically possible for a
+ * site to have a language in IIILANGLIST which the site
+ * does not want to use as a limiting spec, hence it would
+ * not be in the langmenu file.  The spec for the show_language
+ * function specifies to use langmenu, though.  -RMP
+ */
+static	char *
+show_language( char *lang )
+{
+static char *English = "English";
+static char returnbuf[100];
+pathname fn;
+int cnt, i;
+char **lines, *p, *q, langbuf[BUFSIZE];
+
+sprintf(langbuf("III_%s",lang);
+for (p = langbuf+4; *p; *p++) *p = toupper(*p);
+sprintf(fn,"%s/options/config/siteconfig.h",getenv("$IIIDB"));
+if ((cnt = text_file_to_mem(fn,0,&lines)) <= 0) return English;
+strcpy(returnbuf,English);
+q = returnbuf;
+for (i = 0; i < cnt; i++)
+	{
+	if (!(p = strstr(lines[i],langbuf))) continue;
+	p += 7;
+	while (!isalpha(*p)) p++;
+	while (isalpha(*p)) *q++ = *p++;
+	*q = 0;
+	*returnbuf = toupper(*returnbuf);
+	break;
+	}
+mem_dealloc(*lines);
+mem_dealloc(lines);
+return returnbuf;
+}
+#endif
+.
+632,643c
+static char *English = "English";
+static char returnbuf[100];
+char langstr[6], *p, *q, **lines;
+pathname fn;
+int cnt, i;
+
+if (!lang || !*lang) return English;
+if (lookup_file("langmenu",fn,0) == -1) return English;
+if ((cnt = text_file_to_mem(fn,0,&lines)) <= 0) return English;
+strcpy(langstr,hu_get_lang());
+if (!*langstr) strcpy(langstr,"*eng");
+*langstr = 1;
+strcpy(returnbuf,English);
+for (i = 0; i < cnt; i++)
+	{
+	if (strncmp(lang,lines[i],3)) continue;
+	/* Do we have the language name in the _current_ language? */
+	if (!(q = strstr(lines[i],langstr)))
+		{
+		if (p = strchr(lines[i],1)) *p = 0;
+		strcpy(returnbuf,lines[i]+8); /* skip the leading xxx:x > */
+		}
+	else
+		{
+		if (p = strchr(q+9,1)) *p = 0;
+		strcpy(returnbuf,q+9); /* skip the leading ^Axxx:x > */
+		}
+	break;
+	}
+mem_dealloc(*lines);
+mem_dealloc((char *)lines);
+return returnbuf;
+.
+628a
+/*
+ * This function returns the name of the language code "lang".
+ * It attempts to show the language name in the current language.
+ */
+.
+571,574c
+name_record_number_cache();
+name_fulcrum_record_cache();
+name_exported_file();
+name_state_before_export_file();
+parse_webopac_triggers( CNULL );
+.
+562c
+	(void)z39_setup(hu_getport(),wwwoptions_get_Z39MULTI());
+.
+341,548d
+334,339d
+307a
+#ifdef FULCRUM
+					fastsearch_set_scope( scope_mask_ful_target( "x" ) );
+#endif
+.
+302a
+#ifdef FULCRUM
+					fastsearch_set_scope( scope_mask_ful_target( smask ) );
+#endif
+.
+168,169d
+166d
+96,164d
+94d
+86,92d
+80,84d
+70a
+static char *  find_OPAC_URL_start_point( char * );
+static char * find_patroninfo_URL_start_point( char * );
+static int match_net_name( char *, char *, int );
+static int match_local_class( char *, char * );
+.
+63,69d
+45,47d
+42,43d
+38c
+#include "fastutil.h"
+.
+35a
+#include	"wwwoptions.h"
+.
+1,2c
+/*	webpac for iii programs	 */
+static	char	VERSION[] = "110@(#) webpac.c 110.149@(#) 9/30/97 11:04:43";
+.
+w

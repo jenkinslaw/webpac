@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Refresh" CONTENT="90;URL=http:/search/">
+
+<TITLE>JAC Subject Search </TITLE>
+</HEAD>
+<BODY 
+BGCOLOR="lightgrey" 
+onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();"
+>
+
+<div align="center">
+
+Type the <B>SUBJECT</B>, then press <b>&lt;Enter&gt;</b>
+or click <b>Search</b>.
+<P>
+If uncertain of the subject heading, <B>START OVER</B>, 
+ and search by <B>"KEYWORDS"</B>.
+<FORM METHOD=GET>
+<INPUT TYPE=TEXT NAME=SEARCH MAXLENGTH=64 SIZE=48 ALIGN=CENTER>
+<br>
+<INPUT TYPE=SUBMIT VALUE="Search">
+</FORM>
+
+<A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0
+ALT="[START OVER]"></A>
+<P>
+<I>For example:</I>
+<UL>
+<TABLE>
+<UL><TD><LI>Discrimination in Employment</TD></UL>
+<TR><TD><LI>Discrimination</TD></TR>
+<TR><TD><LI>Instructions to juries</TD></TR>
+<TR><TD><LI>Competition, Unfair</TD></TR>
+<TR><TD><LI>Drunk driving</TD></TR>
+</TABLE>
+</UL>
+
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Refresh" CONTENT="90;URL=http:/search/">
+
+<TITLE>INNOPAC WORDS in the title<TITLE>
+</HEAD>
+<BODY 
+BGCOLOR="lightgrey" 
+onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();"
+>
+
+<div align="center">
+
+Type the <B>WORD(S)</B> you want, then press <b>&lt;Enter&gt;</b>
+or click <b>Submit Search</b>
+<FORM METHOD=GET>
+<INPUT TYPE=TEXT NAME=SEARCH MAXLENGTH=64 SIZE=48 ALIGN=CENTER>
+<br>
+<INPUT TYPE=SUBMIT VALUE="Submit Search">
+</FORM>
+
+<A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0
+ALT="[START OVER]"></A>
+<P>
+
+JAC searches the library's records, looking for words in various fields,
+<br> such as title, contents notes, corporate names, etc.
+<p>
+Use the Boolean operators  <b>AND, OR and NOT</b>
+<p> 
+Truncate  words with an asterisk (<b>*</b>).
+<br> 
+<p>
+
+Type the <B>WORD/S</B> you want, for example:
+<UL>
+
+<TABLE>
+<TR><TD><LI>Employment <b>and</b> Discrimination</TD></TR>
+<TR><TD><LI>United States <b>or</b> America</TD></TR>
+<TR><TD><LI>RICO <b>not</b> Puerto</TD></TR>
+<TR><TD><LI>Work<b>*</b> Compensation </TD></TR>
+</TABLE>
+</UL>
+
+</div>
+</BODY>
+</HTML>

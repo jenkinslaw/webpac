@@ -1,0 +1,552 @@
+BOOKINGS=no|false|true
+BIBLOC=true
+
+### WAM options ###
+
+BODYPARAM=bgcolor=#FFFFFF link=#000066 vlink=#333399 alink=#993333 text=#000000 topmargin=0 marginheight=0 marginwidth=0 leftmargin=0
+
+
+
+TOPLOGO=@screens/toplogo.html
+
+BOTLOGO=@screens/botlogo.html
+
+STYLESHEET=/screens/jacstylesheet.css
+BROWSE_t=245/abhn/|240/a/0|970/t/0|/abpn/h0 
+SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number
+
+FORM_FOCUS=T
+WEBPUBDEF=true
+### My JAC settings ###
+
+MY_WEBPAC=F,T
+
+STAFF=3
+
+SUPPRESS_OPTION_P1=MARC_DISPLAY
+SUPPRESS_OPTION_P2=MARC_DISPLAY
+SUPPRESS_OPTION_P4=MARC_DISPLAY
+SUPPRESS_OPTION_P5=MARC_DISPLAY
+SUPPRESS_OPTION_P7=MARC_DISPLAY
+SUPPRESS_OPTION_P8=MARC_DISPLAY
+SUPPRESS_OPTION_P11=MARC_DISPLAY
+SUPPRESS_OPTION_P12=MARC_DISPLAY
+SUPPRESS_OPTION_P13=MARC_DISPLAY
+SUPPRESS_OPTION_P14=MARC_DISPLAY
+SUPPRESS_OPTION_P15=MARC_DISPLAY
+SUPPRESS_OPTION_P16=MARC_DISPLAY
+SUPPRESS_OPTION_P17=MARC_DISPLAY
+SUPPRESS_OPTION_P18=MARC_DISPLAY
+
+PATRON_FIELDS=n/cba|a/a|t/a|z
+
+LOGGEDIN_MSG=<img src="http://www.jenkinslaw.org/images/trianglebulletred.gif"> <span style="color:#990000">You are logged into MyJAC at %s as <STRONG>%s</STRONG></span>
+
+STAFF_LOGGEDIN_MSG=<img src="http://www.jenkinslaw.org/images/trianglebulletred.gif"> <span style="color:#990000">You are <STRONG>STAFF</STRONG> logged into MyJAC at %s as <STRONG>%s</STRONG></span>
+
+
+PATRON_MSG=j|Message from Jenkins Law Library
+
+NO_REVERIFY=acq,req
+DIACLIST=utf8;utf8 diac file
+
+PREF_SEARCHES_P1=20|Y
+PREF_SEARCHES_P2=20|Y
+PREF_SEARCHES_P3=20|Y
+PREF_SEARCHES_P8=20|Y
+PREF_SEARCHES_P11=20|Y
+PREF_SEARCHES_P15=20|Y
+PREF_SEARCHES=5|N
+
+PATRON_NOTICES=az
+TABLEPARAM_PATDISP=<main>|<info>|<buttons>
+
+PREFTEXT=Save as My Preferred Search
+
+# PSTARTOVER=/screens/mainmenu.html 
+PSTARTOVER=/search
+
+### WAM settings - 10/24/06 ###
+
+WAM_LOG_IP=True
+WAM_LOG_PNUM=True
+WAM_LOG_REJECTIONS=True
+WEBPROXY_COOKIE_REFRESH_TIME=22
+PROXYDNS=library.jenkinslaw.org
+TIMEOUT_WAMPATRON=1800
+WAM_ALERT_EMAIL=kpiechnik@jenkinslaw.org|WAM report almost full
+# WAM_FILTER=
+
+### End of WAM settings ###
+
+#ALLOW RATINGS - disabled by Kathy's request 9/27/07
+PATRATE=f
+
+### End of MYJAC settings ###
+
+DIACLIST=big5;big 5 diac file|utf8;utf8 diac file
+# FORCE_COOKIE=
+# VIRC_HIST_LIMIT_TEXT=
+FLD_LABEL_VERBATIM=True
+
+# TIMEOUT=180;URL=/search/ target="_top"
+TIMEOUT=360;URL=/search/
+
+STATGROUP=login
+
+UPDATECIRC=true
+
+### OPTIONS FOR HOLDS ###
+
+FREEZE_HOLDS_P1=T
+FREEZE_HOLDS_P3=T
+FREEZE_HOLDS_P11=T
+
+### END HOLDS ###
+
+### AVS OPTIONS ###
+
+DROP_DOWN=tdacioY
+# DROP_DOWN=tXdacioY
+IBROWSE_MAX=5000
+AVS_TAG=XY
+AVS_MODIFY_TAG=X
+AVS_RELEVANCE_FORMAT=t
+# IMAGE_AVS#=
+SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year
+SORT_MEDIA_s1=asjgpom
+FRAMEURL=0
+
+#allow multiple selections
+MULT_LIMITS=T
+
+#search limits
+AVAILLIM=<EM>Limit results to available items</EM>|<EM>Search results are limited to available items</EM>
+# AVAILLIM=Limit results to available items|Search results are limited to available items
+AVAILLIM_STATS=-,a,g,h,o,w,r,!
+### END AWS ###
+
+HOLDINGS_POS=cath
+
+ITEM_NOTE=True
+
+EXPORT_SELECT_TABLE=Sendto:email,browser|Format:brief
+
+EMAILOP=JAC Plus Search Results|exporter|big5 
+
+# EXPORT=
+
+XRECTYPE=b
+
+LINK856TEXT=Link to:
+# DISPLAY_856=z
+DISPLAY_856=3z
+# DISPLAY_856=z3
+
+ICON_856LINK=<IMG SRC="/screens/856_link.gif" ALT="Electronic Resources" BORDER=0>
+
+CLEAR_PRIVATE_INFO=true
+
+OFFER_HISTORY=TRUE
+
+# BIBREQUEST=T
+# REQUEST_INSTRUCTION= You must have a valid library card to request an item. Per Request processing fee of $5/order + $1/book  will be added to your JAC account <B><BR> Only circulating and on order items can be requested.<BR></B> To request copy of articles from our collection contact <A HREF="http://www.jenkinslaw.org/services/inhouseloan.shtml">Jenkins Document Delivery</A>.<BR>Any <B>S</B>pecial <B>I</B>nstructions?
+
+TABLEPARAM_BRIEFCIT=Y|CLASS=nicList
+
+MILCAT_PUB_VIEW= Save record first or mocked up view of bibliographic record will provide unreliable link.
+
+CHECKIN_BGCOLOR=ARRIVED=#FFFFCC|EXPECTED=#CCCC99|TOBIND/BOUND=#99CCFF|LATE=#9999CC|OTHER=#9999CC
+
+CHECKIN_FONTCOLOR=ARRIVED=BLACK|EXPECTED=BLACK|TOBIND/BOUND=BLACK|LATE=RED|OTHER=BLACK
+
+SHOWOREC=no_rdate
+
+DISPLAY_245=atd
+
+CHECKINat=/screens/info_on_cat.html
+
+BROWSE_HEADERS=Save|Format|No.
+
+SIMILAR_ITEMS=T
+
+# SPECIAL CHARACTERS=
+
+KEYWORD_COLOR=Y|all|blue
+
+MARC=no
+
+NOSEARCH=nub
+
+# PSTARTOVER=/screens/opacmenu.html
+XSTARTOVER=/screens/opacmenu.html
+STARTOVER=/screens/opacmenu.html
+
+TABLEPARAM_BIB=BORDER=0|BORDER=0
+
+TABLEPARAM_BROWSE=CLASS=nicList|CLASS=nicList|CLASS=nicList WIDTH=100%|CLASS=nicList
+
+FEATURED_LIST=01,02,03,04|List of Titles|Received in|No of Titles.
+
+BRIEF_a=ABCH
+BRIEF_t=BCH
+BRIEF_c=ABCH
+BRIEF_i=ABCH
+BRIEF_o=BCH
+BRIEF_d=ABCH
+
+EXTENDED=AU
+EXTENDED_c=CATL
+
+### Z39.50 settings ###
+
+Z39BROADCAST=Search Other Libraries Catalogs
+Z39MULTI=500:100
+Z39PORT=80:211|2080:2211
+Z39SEARCH=Biddle:INNOPAC,Drexel:INNOPAC,temple:INNOPAC
+
+
+### End of Z39.50 ###
+
+## READING HISTORY ##
+
+ICON_READING_HISTORY=<img src="/screens/reading_history.gif" alt="Reading History" border="0" />
+ICON_READING_HISTORY_OPTIN=<img src="/screens/reading_history_opt_in.gif" alt="Opt In" border="0" />
+ICON_READING_HISTORY_OPTOUT=<img src="/screens/reading_history_opt_out.gif" alt="Opt Out" border="0" />
+READING_HISTORY_DELETE=true
+ICON_PAT_DELETE_MARKED=<img src="/screens/pat_delete_marked.gif" alt="Delete Marked" border="0" />
+ICON_PAT_DELETE_ALL=<img src="/screens/pat_delete_all.gif" alt="Delete All" border="0" />
+CIRC_HIST_LIMIT_TEXT="Include All"
+FORCE_COOKIE=true
+
+### BUTTONS ###
+
+BUT_ANOTHER=/screens/spacer.gif
+
+BUT_BIBEXPORT=/screens/bibexport.gif
+
+BUT_BOOKING=/screens/booking.gif
+
+BUT_BRIEF=/screens/spacer.gif
+
+BUT_CANCEL=/screens/cancel.gif
+
+BUT_CARDFORM_BOX=/screens/cardform_box.gif
+
+BUT_CARDFORM_LIN=/screens/cardform_lin.gif
+
+BUT_CLEAR_MARKED=/screens/clear_all.gif
+
+BUT_CLOSEFRAME=/screens/closeframe.gif
+
+BUT_CLOSEWIN=/screens/closewn.gif
+
+BUT_CLOSEWINDOW=/screens/closewindow.gif
+
+BUT_EMAIL=/screens/email.gif
+
+BUT_ENCYCPD=/screens/encycpd.gif
+
+BUT_EXPORT_MULTI=/screens/export_multi.gif
+
+BUT_EXPORT_VIEW_SAVES=/screens/export_view_saves.gif
+
+BUT_EXTENDED=/screens/spacer.gif
+
+BUT_FULL_TEXT=/screens/full_text.gif
+
+BUT_ILL_CANCEL=/screens/ill_cancel.gif
+
+BUT_ILL_FORM=/screens/ill_form.gif
+
+BUT_ILL_HOME=/screens/ill_home.gif
+
+BUT_IR_HOLDINGS=/screens/ir_holdings.gif
+
+BUT_IR_REQUEST=/screens/ir_request.gif
+
+BUT_LIMAVAIL=/screens/limavail.gif
+
+BUT_LIMIT=/screens/limit.gif
+
+BUT_LOGOUT=/screens/logout.gif
+
+# BUT_MARC_DISPLAY=/screens/marc_display.gif
+
+BUT_MODIFY=/screens/modify.gif
+
+BUT_NEWSRCH=/screens/startover.gif
+
+BUT_NEXTPAGE=/screens/nextpage.gif
+
+BUT_NEXTREC=/screens/nextrec.gif
+
+BUT_PAT_CANCELALL=/screens/pat_cancelall.gif
+
+BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
+
+BUT_PAT_BOOKING=/screens/pat_booking.gif
+
+BUT_PAT_CHKOUTS=/screens/pat_chkouts.gif
+
+BUT_PAT_INFO=/screens/pat_info.gif
+
+BUT_PAT_PIN=/screens/pat_pin.gif
+
+BUT_PAT_ILL=/screens/pat_ill.gif
+
+BUT_PAT_GETPSAVEDRECS=/screens/getpsavedrecs.gif
+
+BUT_PAT_HOLDS=/screens/pat_holds.gif
+
+BUT_PAT_PSEARCH_REMOVE=/screens/pat_psearch_remove.gif
+
+BUT_PAT_RENEWALL=/screens/pat_renewall.gif
+
+BUT_PAT_RENEWMARK=/screens/pat_renewmark.gif
+
+BUT_PAT_SEARCH=/screens/pat_search.gif
+
+BUT_PAT_MSGS=/screens/pat_msgs.gif
+
+BUT_PAT_SORTBYCHKOUT=/screens/pat_sortbychkout.gif
+
+BUT_PAT_SORTBYDUE=/screens/pat_sortbydue.gif
+
+BUT_PAT_SUBMIT=/screens/pat_submit.gif
+
+BUT_PAT_FINES=/screens/pat_fines.gif
+
+BUT_PAT_PSEARCH_UPDATE=/screens/pat_psearch_update.gif
+
+BUT_PLOGOUT=/screens/ret2prec.gif
+
+BUT_PREVPAGE=/screens/prevpage.gif
+
+BUT_PREVREC=/screens/prevrec.gif
+
+BUT_PREVSCRN=/screens/prevscrn.gif
+
+BUT_PSTARTOVER=/screens/startover.gif
+
+BUT_PUBLIC=/screens/public.gif
+
+BUT_REGULAR_DISPLAY=/screens/regular_display.gif
+
+# BUT_REQUEST=/screens/request.gif
+
+# BUT_REQUEST_ALL=/screens/request_all.gif
+
+# BUT_REQUEST_MULTI=/screens/request_multi.gif
+
+# BUT_REQUEST_RESET=/screens/request_reset.gif
+
+# BUT_REQUEST_SELECTED=/screens/request_selected.gif
+
+BUT_RET2CAT=/screens/ret2cat.gif
+
+BUT_RET2CRS=/screens/ret2crs.gif
+
+BUT_RET2FEAT=/screens/ret2feat.gif
+
+BUT_RET2PREC=/screens/ret2prec.gif
+
+BUT_RETHOME=/screens/rethome.gif
+
+BUT_RTRNTB=/screens/rtrntb.gif
+
+BUT_SCOPE=/screens/scope.gif
+
+BUT_SEARCH_ALL=/screens/search.gif
+
+BUT_SEARCH_LTD=/screens/search_ltd.gif
+
+BUT_SHOWSIM=/screens/showsim.gif
+# BUT_SHOWSIM=/screens/showsimilar.gif
+
+BUT_SUBMIT=/screens/submit.gif
+
+BUT_STAFF=/screens/staff.gif
+
+BUT_STARTOVER=/screens/startover.gif
+
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+
+BUT_UNSCOPE=/screens/unscope.gif
+
+BUT_VIEW_SAVES=<IMG SRC="/screens/bookcart_saved2.gif" ALT="Books in your bag" BORDER=0>
+
+BUT_WORDSRCH=/screens/wordsrch.gif
+
+BUT_Z39SEARCH=/screens/z39search.gif
+BUT_Z39_ANOTHER=/screens/z39search.gif
+ICON_BOOKCART=<IMG SRC="/screens/bookcart2.gif" ALT="Save to the bag" BORDER=0>
+
+# ICON_REQUEST=<IMG SRC="/screens/request.gif" ALT="Request" BORDER=0>
+
+ICON_FULLRECORD=<IMG SRC="/screens/full_record.gif" ALT="Go to Full Record" border=0>
+# ICON_PATRATE_P1=<IMG SRC="/screens/ratings.gif" border=0>
+# ICON_PATRATE_p3=<IMG SRC="/screens/ratings.gif" border=0>
+# ICON_PATRATE_P11=<IMG SRC="/screens/ratings.gif" border=0>
+# ICON_PATRATE=<IMG SRC="/screens/ratings.gif" border=0>
+# ICON_RATE_GROUP=<IMG SRC="/screens/rate_group.gif" border=0 title="Rated %d stars out of 5 based on %n ratings" />
+
+# ICON_RATE_MY=<IMG SRC="/screens/rate_my.gif" border="0" title="My Ratings" />
+
+# ICON_RATE_NEED=<IMG SRC="/screens/rate_need.gif" border="0" title="Be first one to rate this material" />
+# ICON_RATE_NO=<IMG SRC="/screens/rate_no.gif" border="0" title="No one has rated this this material yet" />
+
+
+# ICON_RATE_PAD=<IMG SRC="/screens/rate_pad.gif" border="0" title="Rated %d stars out of 5 based on %n ratings" />
+
+ICON_RECORDLINK=<div class="bibRecordLink"><a id="recordnum" href="%s">Permanent URL for this title</a></div>
+
+IMAGE_AVS#=/screens/advanced.gif
+IMAGE_AVS1=/screens/avsstar1.gif
+IMAGE_AVS2=/screens/avsstar2.gif
+IMAGE_AVS3=/screens/avsstar3.gif
+IMAGE_AVS4=/screens/avsstar4.gif
+IMAGE_AVS5=/screens/avsstar5.gif
+
+### MAP PAGES ###
+
+LOC_gc=/screens/loc_gc.html
+
+LOC_ga=/screens/loc_ga.html
+
+LOC_pre=/screens/loc_pre.html 
+
+LOC_vf=/screens/loc_vf.html
+
+LOC_dir=/screens/loc_dir.html
+
+LOC_adm=/screens/loc_adm.html
+
+LOC_auto=/screens/loc_auto.html
+
+LOC_cat=/screens/loc_cat.html
+
+LOC_cdo=/screens/loc_cdo.html
+
+LOC_circ=/screens/loc_circ.html
+
+LOC_col=/screens/loc_col.html
+
+LOC_cs=/screens/loc_cs.html
+
+LOC_dd=/screens/loc_dd.html
+
+LOC_doc=/screens/loc_doc.html
+
+LOC_eng=/screens/loc_eng.html
+
+LOC_er=/screens/loc_er.html
+
+LOC_ib=/screens/loc_ib.html
+
+LOC_ill=/screens/loc_ill.html
+
+LOC_ll=/screens/loc_ll.html
+
+LOC_mem=/screens/loc_mem.html
+
+LOC_micro=/screens/loc_micro.html
+
+LOC_ntbl=/screens/loc_ntbl.html
+
+LOC_os=/screens/loc_os.html
+
+LOC_over=/screens/loc_over.html
+
+LOC_penna=/screens/loc_penna.html
+
+LOC_per=/screens/loc_per.html
+
+LOC_rb=/screens/loc_rb.html
+
+LOC_ref=/screens/loc_ref.html
+
+LOC_state=/screens/loc_state.html
+
+LOC_text=/screens/loc_text.html
+
+LOC_tr=/screens/loc_tr.html
+
+LOC_us=/screens/loc_us.html
+
+LOC_video=/screens/loc_video.html
+
+LOC_wmo=/screens/loc_wmo.html
+
+LOC_wp=/screens/loc_wp.html
+
+LOC_refdk=/screens/loc_refdk.html
+
+LOC_cls=/screens/loc_cls.html
+
+LOC_aud=/screens/loc_aud.html
+
+LOC_ca=/screens/loc_ca.html
+
+LOC_ind=/screens/loc_ind.html
+
+LOC_lr=/screens/loc_lr.html
+
+LOC_nn=/screens/loc_nn.html
+
+LOC_read=/screens/loc_read.html
+
+# REQFILLTIME=14|<br />Current estimated availability: approximately %d days|<br />Request available in approximately %d days|<br />This material may be immediately available
+
+
+# REQUEST=Request this item, <A HREF="http://www.jenkinslaw.org/services/document-rates.php">$$</A>|system|circ|Y
+BRIEF_EXPORT=a|t|p|y:856
+FEEDS_PORT=6060
+RSS_MIN_TTL=20
+ITEM_NOTE=true
+# ICON_LOGIN=
+# PORTAL_ID=
+# PORTAL_INST=
+AVAILLIM_STATS==-,o,!
+BUT_CLOSEWN=/screens/closewn.gif
+ICON_CANCEL=/screens/cancel.gif
+ICON_OK=/screens/ok.gif
+ICON_SELECT_ALL=<img src="/screens/select_all.gif" alt="Select All" border="0" />
+
+ICON_PREVPAGE=<img src="/screens/bib_paging_prev.gif" border="0" alt="Previous Page" />
+
+ICON_CLEAR_ALL=<img src="/screens/clear_all.gif" alt="Clear All" border="0" />
+ICON_CLEAR_FORM=<img src="/screens/clearform.gif" alt="Clear Form" border="0" />
+
+ICON_SUBMIT=<img src="/screens/submit.gif" alt="Submit" border="0" />
+# CUSTOM_MESSAGES=
+ICON_DELETE_SELECTED=<img src="/screens/delete_selected.gif" alt="Delete Selected" border="0" />
+
+ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Remove Marked Records" border="0" />
+
+# RELSEARCH=
+# SHOWSIM_SFLDS=
+AUTHMSG=<em>%u</em> -- See %w <strong>%a</strong> <span class="authPublicNote">%p</span>|<em>%u</em> -- See Also %w <strong>%a</strong> <span class="authPublicNote">%p</span>
+
+AUTHMSG_SR=athe later heading|bthe earlier heading|gthe narrower term|hthe broader term
+
+AUTHOR_TITLE_TAG=v
+BROWSE_c=050|245/abhn/|240/a/0|970/t/0|/abpn/h0 
+BROWSE_a=110a
+# BROWSE=
+ICON_BOOKCART_SAVED=<IMG SRC="/screens/bookcart_saved2.gif" ALT="Save to the bag" BORDER=0>
+ICON_SAVEMARKED=<IMG SRC="/screens/bookcart_saved2.gif" ALT="Save to the bag" BORDER=0>
+ICON_SAVEALLPAGE=<img src="/screens/save_all.gif" alt="Save All" border="0" />
+
+
+# ICON_MYLISTS=
+# MY_LISTS=
+# ICON_BACK_TO_MYLISTS=
+# ICON_MYLISTS_SAVE_TO_LIST=
+# ICON_MYLISTS_SAVE=
+# ICON_MYLISTS_REMOVE_DUPLICATES=
+# ICON_MYLISTS_EXPORT=
+# ICON_SORTPUDATE=
+# ICON_LOCATEINRESULTS=
+ICON_NEARBY=<img src="/screens/nearby.gif" alt="Show Nearby Items" border="0" />
+

@@ -1,0 +1,508 @@
+<title>Jenkins Law Library - JAC Plus - The Legal Resource Portal</title>
+
+<style type="text/css">
+
+<!--
+
+
+
+A.advancedsearch { font-family: arial, helvetica, sans-serif; font-size: 9 }
+
+A.path { font-family: arial, helvetica, sans-serif; font-size: 11px; line-height: .8; color: #666699 }
+
+.path { font-family: arial, helvetica, sans-serif; font-size: 11px; line-height: .8; color: #666699 }
+
+.announce { font-family: arial, helvetica, sans-serif; font-size: 12px }
+
+.body { font-family: arial; font-size: 12px }
+
+.welcome { color: #CC6600; font-size: 16px; font-family: arial; }
+
+.title { color: #CC6600; font-size: 20px; font-family: arial; }
+
+A.menu:link { color: #FFFFFF; text-decoration: none; font-family: arial; font-size: 11.5px; line-height: 1.4 }
+
+A.menu:visited { color: #FFFFFF; text-decoration: none; font-family: arial; font-size: 11.5px; line-height: 1.4 }
+
+A.menu:hover { color: #cc9966; text-decoration: underline; font-family: arial, helvetica, sans-serif; font-size: 11.5px; line-height: 1.4 }
+
+.homeheader { font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #CC6600; font-weight: bold; }
+
+TD { font-family: arial; font-size: 12px }
+
+TD.pgheader { background: #000066 url("http://www.jenkinslaw.org/images/anniv_tag.gif"); background-repeat: no-repeat; }
+
+TR { font-family: arial; font-size: 12px }
+
+UL { font-family: arial; font-size: 12px }
+
+LI { font-family: arial; font-size: 12px }
+
+.navtext { width:225px; font-size:10pt; border-width:2px; font-family: arial; border-style:outset; border-color:darkgray; layer-background-color:#FFFFCC; background-color:#FFFFCC; color:black; }
+
+A.headmenu:link, A.headmenu:visited {font-size: 13px; font-family: Verdana, Arial, sans-serif; text-decoration: none; color: #660000; font-weight: bold; }
+
+A.headmenu:hover { font-size: 13px; text-decoration: underline; font-family: Verdana, Arial, sans-serif; color: #999966; font-weight: bold; }
+
+
+
+-->
+
+
+
+</style>
+
+</head>
+
+
+
+<body link="#000066" vlink="#333399" alink="#993333" topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
+
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+
+	<tr width="100%" height="60">
+
+			<td bgcolor="#000066" colspan="1" valign="top" align="left" height="60"><img src="http://www.jenkinslaw.org/images/spacer.gif" width="5" height="1" alt=""><a href="http://www.jenkinslaw.org"><img src="http://www.jenkinslaw.org/images/entrance_anniv2.jpg" width="125" height="55" border="0" alt="Jenkins Law Library"></a></td>
+
+					<td bgcolor="#000066" colspan="4" class="pgheader"><img src="http://www.jenkinslaw.org/images/spacer.gif" width="1" height="55" alt=""></td>
+
+						</tr>
+
+						<tr width="100%">
+
+							<td bgcolor="#000066" valign="top">
+
+									<table width="130" border="0" cellpadding="0" cellspacing="0">
+
+												<tr>
+
+															<td height="100%" bgcolor="#000066" width="8" valign="top">&nbsp;</td><td height="100%" bgcolor="#000066" valign="top">
+
+																		<img src="http://www.jenkinslaw.org/images/spacer.gif" height="15"><br>
+
+
+
+																					<a href="http://www.jenkinslaw.org/collection/index.php"><img src="http://www.jenkinslaw.org/images/researchtools.gif" border="0" alt="Research Tools"></a><br>
+
+																								
+																											<a class="menu" href="http://jac.jenkinslaw.org">Catalog (JAC Plus)</a><br>
+
+																														<a class="menu" href="http://www.jenkinslaw.org/services/recsbriefs.php">Court Records &amp; Briefs</a><br>
+
+																																	<a class="menu" href="http://journals.jenkinslaw.org">Journal Portal</a><br>
+
+																																				<a class="menu" href="http://www.jenkinslaw.org/researchlinks/index.php?rl=1">Legal Links</a><br>
+
+																																							<a class="menu" href="http://www.jenkinslaw.org/collection/lpi.php">Member Online Services</a><br>
+
+																																										<a class="menu" href="http://www.jenkinslaw.org/researchlinks/index.php?rl=2">Nonlegal Links</a><br>
+
+																																													<a class="menu" href="http://www.jenkinslaw.org/collection/pa-leghist.php">PA Legislative Histories</a><br>
+
+																																																<a class="menu" href="http://www.jenkinslaw.org/researchlinks/index.php?rl=241">Self-Help Links</a><br><br>
+
+
+
+																																																			<a href="http://www.jenkinslaw.org/services/index.php"><img src="http://www.jenkinslaw.org/images/services.gif" border="0" alt="Services"></a><br>
+
+
+
+																																																						<a class="menu" href="http://www.jenkinslaw.org/services/reference.php">Ask a Librarian</a><br>
+
+																																																									<a class="menu" href="http://www.jenkinslaw.org/prodevelop/learning/index.php">CLE Classes</a><br>
+
+																																																												<a class="menu" href="http://www.jenkinslaw.org/services/conference.php">Conference Rooms</a><br>
+
+																																																															<a class="menu" href="http://www.jenkinslaw.org/prodevelop/orientation.php">Library Orientation</a><br>
+
+																																																																		<a class="menu" href="http://www.jenkinslaw.org/services/documents.php">Order Documents</a><br>
+
+																																																																					<a class="menu" href="http://www.jenkinslaw.org/services/jsearch.php">Research Requests</a><br><br>
+
+
+
+																																																																								<a href="http://www.jenkinslaw.org/about/index.php"><img src="http://www.jenkinslaw.org/images/aboutus_new.gif" border="0" alt="About Us"></a><br>
+
+
+
+																																																																											<a class="menu" href="http://www.jenkinslaw.org/about/contact.php">Contact Us</a><br>
+
+																																																																														<a class="menu" href="http://www.jenkinslaw.org/about/membership/index.php">Membership</a><br>
+
+																																																																																	<a class="menu" href="http://www.jenkinslaw.org/about/sitemap/">Site Map</a></td></tr>
+
+																																																																																			</table>
+
+																																																																																				</td>
+
+																																																																																					<td valign="top"><img src="http://www.jenkinslaw.org/images/bluecorner.gif" width="25"></td>
+
+																																																																																						<td valign="top" align="left" width="100%">
+
+
+
+																																																																																						<!--NEW MENU STARTS--><table border="0" cellspacing="0" cellpadding="1" width="100%" bgcolor="#ffffff" align="center">
+
+																																																																																						<tr valign="middle">
+
+																																																																																																<td align=center valign=middle width="30%">&#149; <a href="http://www.jenkinslaw.org/collection/index.php" class="headmenu">Research Tools</a> &#149; </td>
+
+																																																																																																										<td align=center valign=middle>&#149; <a href="http://www.jenkinslaw.org/services/index.php" class="headmenu">Services</a> &#149; </td>
+
+																																																																																																																				<td align=center valign=middle>&#149; <a href="http://www.jenkinslaw.org/prodevelop/index.php" class="headmenu">Classes</a> &#149; </td>
+
+																																																																																																																														<td align=center valign=middle>&#149; <a href="http://www.jenkinslaw.org/about/index.php" class="headmenu">About Us</a> &#149; </td>
+
+
+
+																																																																																																																																							</tr>
+
+																																																																																																																																							<tr>
+
+																																																																																																																																							<td colspan="7"><hr noshade size="1"></td>
+
+																																																																																																																																							</tr>
+
+																																																																																																																																							</table><!--NEW MENU ENDS-->
+
+
+
+																																																																																																																																							<!--------------------------------JAC CODE------------------------->
+
+																																																																																																																																							<DIV ALIGN="CENTER">
+
+																																																																																																																																							   Type the <B>WORD(S)</B> you want and then click <b>Submit Search</b>
+
+
+
+																																																																																																																																							   <FORM ACTION=/search/X METHOD=GET>
+
+																																																																																																																																							   <TABLE BORDER=0 CELLPADDING="10" ALIGN="CENTER">
+
+																																																																																																																																							   <TR>
+
+																																																																																																																																								  <TD>
+
+																																																																																																																																								  <!--{msg}-->
+
+																																																																																																																																									 </TD>
+
+																																																																																																																																									 </TR>
+
+
+
+																																																																																																																																									 <TR>
+
+																																																																																																																																										<TD>
+
+																																																																																																																																										<!--{search}-->
+
+																																																																																																																																										   </TD>
+
+																																																																																																																																										   </TR>
+
+
+
+																																																																																																																																										   <TR>
+
+																																																																																																																																											  <TD>
+
+																																																																																																																																											  <!--{srchhist}-->
+
+																																																																																																																																												 </TD>
+
+																																																																																																																																												 </TR>
+
+
+
+																																																																																																																																												 <TR>
+
+																																																																																																																																													<TD>
+
+																																																																																																																																													<!--{lang}-->
+
+																																																																																																																																													   </TD>
+
+																																																																																																																																													   </TR>
+
+
+
+																																																																																																																																													   <TR>
+
+																																																																																																																																														  <TD>
+
+																																																																																																																																														  <!--{mattype}-->
+
+																																																																																																																																															 </TD>
+
+																																																																																																																																															 </TR>
+
+
+																																																																																																																																															 <TR>
+
+																																																																																																																																																<TD>
+
+																																																																																																																																																<!--{branch}-->
+
+																																																																																																																																																   </TD>
+
+																																																																																																																																																   </TR>
+
+
+
+																																																																																																																																																   <TR>
+
+																																																																																																																																																	  <TD>
+
+																																																																																																																																																	  <!--{scope}-->
+
+																																																																																																																																																		 </TD>
+
+																																																																																																																																																		 </TR>
+
+
+
+																																																																																																																																																		 <TR>
+
+																																																																																																																																																			<TD COLSPAN="2">
+
+																																																																																																																																																			<!--{DOCDATE}-->
+
+																																																																																																																																																			   </TD>
+
+																																																																																																																																																			   </TR>
+
+
+
+																																																																																																																																																			   <TR>
+
+																																																																																																																																																				  <TD>
+
+																																																																																																																																																				  <!--{sort}-->
+
+																																																																																																																																																					 </TD>
+
+																																																																																																																																																					 </TR>
+
+
+
+																																																																																																																																																					 <TR>
+
+																																																																																																																																																						<TD>
+
+																																																																																																																																																						<!--{partner}-->
+
+																																																																																																																																																						   </TD>
+
+																																																																																																																																																						   </TR>
+
+
+																																																																																																																																																						   <TR>
+
+																																																																																																																																																							  <TD>
+
+																																																																																																																																																							  <!--{innreach}-->
+
+																																																																																																																																																								 </TD>
+
+																																																																																																																																																								 </TR>
+
+
+
+
+																																																																																																																																																								 </TABLE>
+
+
+
+																																																																																																																																																								 <P>
+
+																																																																																																																																																									<INPUT TYPE=SUBMIT VALUE="Submit your search">
+
+																																																																																																																																																									   <INPUT TYPE=RESET VALUE="Clear your search">
+
+																																																																																																																																																									   </FORM>
+
+
+
+																																																																																																																																																									   </DIV>
+
+																																																																																																																																																									   <!--------------------------------END JAC CODE------------------------->
+
+																																																																																																																																																									   </td>
+
+																																																																																																																																																									   <td valign="top"><img src="http://www.jenkinslaw.org/images/bluedotscorner.gif"></td>
+
+																																																																																																																																																									   <td bgcolor="#999966" align="right" valign="top">
+
+																																																																																																																																																									   <table width="150" cellpadding="2" cellspacing="0" border=0>
+
+																																																																																																																																																									   <!--<tr><td bgcolor="#999966">&nbsp;</td><td bgcolor="#999966"><font color="#FFFFFF" face="arial" size="1">&nbsp;</font></td><td bgcolor="#999966">&nbsp;</td>
+
+																																																																																																																																																									   </tr>-->
+
+																																																																																																																																																									   <tr><td background="http://www.jenkinslaw.org/images/bluedots.gif">&nbsp;</td><td background="http://www.jenkinslaw.org/images/bluedots.gif" bgcolor="#666633"><font color="#FFFFFF" face="arial, helvetica, sans-serif" size="1">SITE SEARCH</font></td><td background="http://www.jenkinslaw.org/images/bluedots.gif">&nbsp;</td>
+
+																																																																																																																																																									   </tr>
+
+																																																																																																																																																									   <tr><td bgcolor="#999966">&nbsp;</td><td align="right" bgcolor="#999966" valign="top"><form method=GET action="http://www.jenkinslaw.org/cgi-bin/search/search.pl" name="SearchForm">
+
+																																																																																																																																																									   <input type=hidden name="Range" value="Any">
+
+																																																																																																																																																									   <input type=hidden name="Format" value="Standard">
+
+																																																																																																																																																									   <input name="Terms" size=15 maxlength=800 value=""><br><font face="arial, helvetica, sans-serif" size="1"><a class="advancedsearch" href="http://www.jenkinslaw.org/search/">advanced search</a></font> <img src="http://www.jenkinslaw.org/images/spacer.gif" height="1" width="3">
+
+																																																																																																																																																									   <input type=submit value="go!">
+
+																																																																																																																																																									   </form></td>
+
+																																																																																																																																																									   <td bgcolor="#999966">&nbsp;</td>
+
+																																																																																																																																																									   </tr>
+
+																																																																																																																																																									   <tr>
+
+																																																																																																																																																									   <td width="100%" colspan="3">
+
+																																																																																																																																																									   <table width="100%" bgcolor="#999966" cellpadding="1" cellspacing="0" border="0">
+
+																																																																																																																																																									   <tr>
+
+																																																																																																																																																									   <td colspan=3 background="http://www.jenkinslaw.org/images/bluedots.gif">
+
+																																																																																																																																																									   <table cellpadding="5" cellspacing="0" border="0">
+
+																																																																																																																																																									   <tr><td><font face="arial, helvetica, sans-serif" size="1" color="#FFFFFF">SEE ALSO:</font>
+
+																																																																																																																																																									   </td>
+
+																																																																																																																																																									   </tr>
+
+																																																																																																																																																									   </table>
+
+																																																																																																																																																									   </td> </tr>
+
+
+
+																																																																																																																																																									   <tr>
+
+
+
+																																																																																																																																																									   <td background="http://www.jenkinslaw.org/images/bluedots.gif"> <img src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=1 border=0 alt=""> </td>
+
+
+
+																																																																																																																																																									   <td bgcolor="#FFFFFF" valign="top">
+
+																																																																																																																																																									   <table cellpadding="4" cellspacing="0" border="0">
+
+																																																																																																																																																									   <tr>
+
+																																																																																																																																																									   <td bgcolor="#FFFFFF">
+
+																																																																																																																																																									   <small> <span class="announce">
+
+
+
+																																																																																																																																																									   <script language="JavaScript" src="http://www.jenkinslaw.org/hours.js"></script>
+
+
+
+																																																																																																																																																									   <p>
+
+																																																																																																																																																									   <b><font color="#cc6600">Can't find it?</font> </b><br>
+
+																																																																																																																																																									   Visit our <a href="http://www.jenkinslaw.org/collection/jac/guide/index.php"><b>JAC Plus Guide</b></a>
+
+																																																																																																																																																									   for FAQs, tips, and additional resources.
+
+
+
+																																																																																																																																																									   <p>
+
+																																																																																																																																																									   <b><font color="#cc6600">Search Tips</font> </b><br>
+
+																																																																																																																																																									   Looking for more information on JAC Plus search options?  Our <a href="http://www.jenkinslaw.org/collection/jac/guide/tips.php"><b>JAC Plus Tips</b></a> page can help you search more effectively.
+
+
+
+																																																																																																																																																									   <p>
+
+																																																																																																																																																									   <b><font color="#cc6600">Other Resources:</font> </b><br>
+
+																																																																																																																																																									   &nbsp;<img src="http://www.jenkinslaw.org/images/diamondbulletorange.gif">&nbsp; <a href="http://www.jenkinslaw.org/about/generalinfo/lending.php">Borrowing Policy</a><br>
+
+																																																																																																																																																									   &nbsp;<img src="http://www.jenkinslaw.org/images/diamondbulletorange.gif">&nbsp; <a href="http://www.jenkinslaw.org/about/membership/index.php">Join Jenkins</a><br>
+
+																																																																																																																																																									   &nbsp;<img src="http://www.jenkinslaw.org/images/diamondbulletorange.gif">&nbsp; <a href="http://journals.jenkinslaw.org">Journal Portal</a><br>
+
+																																																																																																																																																									   &nbsp;<img src="http://www.jenkinslaw.org/images/diamondbulletorange.gif">&nbsp; <a href="http://jac.jenkinslaw.org:2082/patroninfo">Login to MyJAC</a><br>
+
+																																																																																																																																																									   &nbsp;<img src="http://www.jenkinslaw.org/images/diamondbulletorange.gif">&nbsp; <a href="http://www.jenkinslaw.org/researchlinks/index.php?rl=252">Other Catalogs</a>
+
+
+
+																																																																																																																																																									   <p>
+
+																																																																																																																																																									   <img src="http://www.jenkinslaw.org/images/trianglebulletred.gif">&nbsp;<a href="http://www.jenkinslaw.org/about/jenkinsnews.php">Jenkins News</a>...<br>
+
+																																																																																																																																																									   <img src="http://www.jenkinslaw.org/images/trianglebulletred.gif">&nbsp;<a href="http://www.jenkinslaw.org/about/calendar/">Events Calendar</a>...
+
+
+
+																																																																																																																																																									   </span>
+
+																																																																																																																																																									   </small></td></tr></table></td>
+
+																																																																																																																																																									   <td background="http://www.jenkinslaw.org/images/bluedots.gif"><img src="http://www.jenkinslaw.org/images/spacer.gif"
+
+																																																																																																																																																										width=1 height=1 border=0 alt=""></td>
+
+																																																																																																																																																										</tr>
+
+																																																																																																																																																										<tr>
+
+																																																																																																																																																										<td colspan=3 background="http://www.jenkinslaw.org/images/bluedots.gif"><img
+
+																																																																																																																																																										 src="http://www.jenkinslaw.org/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+
+																																																																																																																																																										 </tr>
+
+																																																																																																																																																										 </table></td></tr>
+
+																																																																																																																																																										 <tr><td colspan="2"></td></tr>
+
+																																																																																																																																																										 </table>
+
+																																																																																																																																																										 </td>
+
+																																																																																																																																																										 </tr>
+
+																																																																																																																																																										 <tr><td bgcolor="#000066">&nbsp;</td>
+
+																																																																																																																																																										 <td>&nbsp;</td>
+
+																																																																																																																																																										 <td valign="top"><hr noshade size="1">
+
+																																																																																																																																																										 <font face="arial, helvetica, sans-serif" color="#999966" size="1"><br>
+
+																																																																																																																																																										 JAC Plus powered by <a href="http://www.iii.com">Innovative Interfaces, Inc.</a><br>
+
+																																																																																																																																																										 Copyright &copy; 1996 - 2005, Jenkins Law Library.  All rights reserved.<br><a href="http://www.jenkinslaw.org/about/disclaimer.php">Disclaimer</a> |
+
+																																																																																																																																																										 <a href="http://www.jenkinslaw.org/about/privacy.php">Privacy Policy</a> |
+
+
+																																																																																																																																																										 <a href="http://www.jenkinslaw.org/about/contact.php">Contact Us</a> |
+
+																																																																																																																																																										 <a href="http://www.jenkinslaw.org/about/suggest.php">Suggestions</a>
+
+																																																																																																																																																										 <br><br></font></td><td>&nbsp;</td>
+
+																																																																																																																																																										 <td bgcolor="#999966">&nbsp;</td>
+
+																																																																																																																																																										 </tr>
+
+																																																																																																																																																										 </table>
+
+
