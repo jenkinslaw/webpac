@@ -32,10 +32,9 @@ obj.submit();
 </head>
 <body>
 <!--{toplogo}-->
-
+<br /><br /><br />
 <div class="pageContentInner mainSearch">
-
-<h1 class="accessibleAddInfo">Search</h1>
+<center>
 <form class="unpadded" action="/search~/" method="get" name="search" id="search">
 <select name="searchtype" id="searchtype" onChange="initSort()">
 <option value="X" selected="selected"> Keyword</option>
@@ -45,15 +44,15 @@ obj.submit();
 <option value="c"> Call #</option>
 <option value="i"> ISBN/ISSN</option>
 </select>
-</td>
-<td valign="bottom">
+
+
 <input type="text" id="searcharg" name="searcharg" size="35" maxlength="75" />
-</td>
-<td valign="bottom">
-<input type="image" name="submit" src="http://jac.jenkinslaw.org/screens/go_button.gif" value="GO" onClick="_gaq.push(['_trackEvent', 'Basic Search', 'Submit Search', '']); />
+<input type="submit" name="submit" value="SEARCH" class="form-submit buttons" onClick="_gaq.push(['_trackEvent', 'Basic Search', 'Submit Search', '']); />-->
+
+
+
 <input type="hidden" name="SORT" id="SORT" value="D" />
 </form>
-
 </div>
 <!--pageContentInner -->
 
