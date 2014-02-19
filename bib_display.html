@@ -1,75 +1,87 @@
-AJS was here....
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<!--{toplogo}-->
 <!--{ifbibdisplay}-->
-2
 <!--{xif}-->
-3
 <!--{catedit}-->
-4
-5
 <div id="bibDisplayBody">
-6
-<div class="navigationRowRecord">
-7
+<div align="center">
 <!--{navrow}-->
-8
+Testing.... AJS
 </div>
-9
 <div id="bibDisplayContent">
-10
 <div class="bibSearch">
 <!--{searchtool}-->
+</div><!-- close tool -->
+<div class="bibHistoryRow">
 <div class="bibSearchHistory">
 <!--{searchhistory}-->
 </div>
-</div><!-- bibSearch -->
-
 <div class="bibPager">
 <!--{pager}-->
 </div>
-
-<div class="bibClear"></div>
-
-<div class="bibResourceSidebar">
+</div>
+<br style="clear:both"/>
+<div style="float:right;width:20%"">
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
 <!--{xif}-->
-<!--Optional INNReach resources.-->
 <!--{innreach}-->
+</div>
+<!-- <div style="width:100%; margin: 0px;"> -->
+<table cellpadding="10" cellspacing="0" width="100%">
+<tr><td witdh="100%" valign="top">
+<table id="bibDisplayLayout" cellpadding="0" cellspacing="0"width="100%">
+<tr>
+<td valign="top" align="left" >
+<div class="bibRecordLink">
+<!--{recordlink}-->
 <!--{relsearch}-->
 </div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellpadding="0" cellspacing="3">
+<tr>
+<td valign="top" width="20%" class="bibInfoLabel">LOC</td>
+<td class="bibInfoData">
+<!--{bibloc}-->
+</td>
+</tr></table></td></tr></table>
 
-<div class="bibDisplayJacket">
+</td>
+<td valign="top" id="coverImage" align="center">
 <!--{bibimage}-->
-<div class="bibMedia">
-<!--{media}-->
-</div>
-</div>
 
-<div class="bibDisplayContentMain">
-
-<!--{recordinfo:a}-->
-
-<h1 class="bibDisplayTitle">
-<!--{recordinfo:t}-->
-</h1>
-
-<!--{recordinfo:pR}-->
-
+</td>
+</tr>
+</table>
+<!--{recordinfo:cath}-->
+		<!--{recordinfo:!}-->
 <!--{ifhaspatrate}-->
-<div class="bibDisplayRatings">
-<!--{ratings}-->
-</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellpadding="0" cellspacing="3">
+<tr>
+<td valign="top" width="20%" class="bibInfoLabel">Rating</td>
+<td class="bibInfoData">
+	<!--{ratings}-->
+</td>
+</tr></table></td></tr></table>
 <!--{xif}-->
 
+</td>
+<td valign="top" id="coverImage" align="center">
+<!--{bibimage}-->
+
+</td>
+</tr>
+</table>
 <!--{booking}-->
 <!--{holdingslink}-->
-<div class="testlinkeddocs">
 <!--{linkeddocs}-->
-</div>
-<div class="bibDisplayUrls">
 <!--{URLS}-->
-</div>
-
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
@@ -79,41 +91,127 @@ AJS was here....
 <!--{xif}-->
 <!--{holds}-->
 <!--{holdings}-->
-
-<div class="bibDisplayItems">
-<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
-<div class="bibDisplayItemsMain">
+<span class="bibItems" id="bibItems_main1">
 <!--{items}-->
-</div>
-</div>
+</span>
+<table width="90%" id="funbuttons">
+<tr>
+<td>
 
+<span id="citethislink"></span>
+<span id="__GBS_Button0"></span>
+
+</td>
+</tr>
+</table>
 <!--{orders}-->
+<!--<h1 class="bareBreaker">Details</h1>-->
+<!--{recordinfo:perfvsnudbxyqlzio}-->
+	<!--{recordinfo:xzsqyuio}-->    
+</td>
+</tr>
+</table>
 
-<div class="bibDisplayContentMore">
-<!--{recordinfo:#}-->
-</div>
-
-<!--{IFELCONTENT:365}-->
-<!-- Replace the number for your enhanced content in Pathfinder Pro -->
-<div class="bibDisplayContentMore">
-<ul id="elContent">
-<!--{ELCONTENT:365}-->
-</ul>
-</div>
-<!--{xif}-->
-
-<div class="bibDisplayContentMore bibDisplayReviews">
-<div class="bibDisplayPermLink actionButtonArea">
-<!--{recordlink}-->
-</div>
-<!--{patronreviewsfull}-->
-
-</div>
-
-</div>
-
-
+<!-- </div> -->
 </div><!-- close bibDisplayContent -->
-<div class="clear"></div>
 </div><!-- close bibDisplayBody -->
+<script type="text/javascript" src="http://books.google.com/books/previewlib.js"></script>
+<script type="text/javascript">
+
+	function IsNumeric(sText)
+	{
+	   var ValidChars = "0123456789.";
+	   var IsNumber=true;
+	   var Char;
+	
+	 
+	   for (i = 0; i < sText.length && IsNumber == true; i++) 
+	      { 
+	      Char = sText.charAt(i); 
+	      if (ValidChars.indexOf(Char) == -1) 
+	         {
+	         IsNumber = false;
+	         }
+	      }
+	   return IsNumber;
+	}
+
+	function externalsources()
+	{
+		try{
+			var google_books_array = new Array();
+			var gba = 0;
+			
+			var tr = document.getElementsByTagName('TR');
+			for(i = 0; i < tr.length; i++) {
+				var x=tr[i].getElementsByTagName('TD');
+				
+				if (x.length == 2 && x[0].innerHTML == "OCLC") 
+				{
+					oclc = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); //get oclc
+					oclc = oclc.replace(/ /g,""); //take out spaces if any
+					oclc = oclc.replace(/[\n\t]/ig,""); //take out newline
+					google_book0 = "OCLC:" + oclc; //0813513421
+					google_books_array[gba] = google_book0;
+					gba++;
+				}
+
+				
+				if (x.length == 2 && x[0].innerHTML == "LCCN") 
+				{
+					lccn = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); //get oclc
+					lccn = lccn.replace(/ /g,""); //take out spaces if any
+					lccn = lccn.replace(/[\n\t]/ig,""); //take out newline
+					google_book1 = "LCCN:" + lccn; //0813513421
+					google_books_array[gba] = google_book1;
+					gba++;
+					
+				}					
+				
+				if(x.length == 2 && x[0].innerHTML == "ISBN/ISSN")
+				{
+					isbn = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); 
+					isbn = isbn.replace(/ /g,""); //take out spaces if any
+					isbn = isbn.replace(/:/g,""); //take out colons if any
+					isbn = isbn.replace(/[\n\t]/ig,""); //take out newline
+					
+					google_book2 = "ISBN:" + isbn; //0813513421
+					google_books_array[gba] = google_book2;
+					gba++;
+					
+					//GBS_insertPreviewButtonPopup(google_book);
+					//GBS_insertPreviewButtonPopup('ISBN:0738531367');
+					
+					
+					//__GBS_Button0
+					/*
+					//var gbsbutton = document.getElementById('__GBS_Button1');
+					//var googlepreview = document.getElementById('googlepreview');
+					//googlepreview.innerHTML = gbsbutton.innerHTML;
+					//gbsbutton.innerHTML = "";
+					*/
+
+				}
+	
+			}
+			
+			if(IsNumeric(oclc))
+			{
+				var citethislink = document.getElementById('citethislink');
+				citethislink.innerHTML = "<a href='http://worldcat.org/wcpa/oclc/"+ oclc + "?page=citation' target='_BLANK' class='nearbylib'><img src='/screens/cite_this.gif' border=0 alt='Cite This (from OCLC)'></a>";
+			}
+			
+			//var google_book_lookup = new Array(google_book0,google_book1,google_book2);
+			GBS_insertPreviewButtonPopup(google_books_array);
+						
+
+		
+		}
+		catch(e) {}		
+			
+	}
+
+	externalsources();
+	
+</script>
 <!--{botlogo}-->
