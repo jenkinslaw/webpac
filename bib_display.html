@@ -7,7 +7,6 @@
 <div id="bibDisplayBody">
 <div align="center">
 <!--{navrow}-->
-Testing.... AJS
 </div>
 <div id="bibDisplayContent">
 <div class="bibSearch">
@@ -198,7 +197,7 @@ Testing.... AJS
 			if(IsNumeric(oclc))
 			{
 				var citethislink = document.getElementById('citethislink');
-				citethislink.innerHTML = "<a href='http://worldcat.org/wcpa/oclc/"+ oclc + "?page=citation' target='_BLANK' class='nearbylib'><img src='/screens/cite_this.gif' border=0 alt='Cite This (from OCLC)'></a>";
+				citethislink.innerHTML = "<a href='http://worldcat.org/wcpa/oclc/"+ oclc + "?page=citation' target='_BLANK' class='nearbylib'><span class=\"buttons\" alt=\"Get a citation for this record\">CITE</span></a>";
 			}
 			
 			//var google_book_lookup = new Array(google_book0,google_book1,google_book2);

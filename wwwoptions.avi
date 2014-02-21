@@ -44,7 +44,7 @@ BUT_CANCEL=/screens/cancel.gif
 BUT_CLOSEWINDOW=/screens/closewindow.gif
 BUT_CLOSEWN=/screens/closewn.gif
 BUT_RET2CAT=/screens/ret2cat.gif
-BUT_STARTOVER="><span class="buttons" alt="Start Over">Start Over</span><img style="display:none" src="
+BUT_STARTOVER="><span class="buttons" alt="Start Over">START OVER</span><img style="display:none" src="
 BUT_SUBMIT=/screens/submit.gif
 CUSTOM_MESSAGES=true
 DISPLAY_856=[subfields]|[new window]
@@ -87,7 +87,7 @@ BUT_STAFF=/screens/staff.gif
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
-BUT_ANOTHER=/screens/another.gif
+BUT_ANOTHER="><span class="buttons" alt="Another Search">ANOTHER SEARCH</span><img style="display:none" src="
 BUT_NEWSRCH=/screens/startover.gif
 BUT_WORDSRCH=/screens/wordsrch.gif
 DROP_DOWN=Xatdc
@@ -101,8 +101,8 @@ OFFER_HISTORY=true
 # Advanced Searching
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZPHJQIL
-BUT_MODIFY=/screens/modify.gif
-BUT_SHOWSIM=/screens/showsim.gif
+BUT_MODIFY="><span class="buttons" alt="Modify Search">MODIFY SEARCH</span><img style="display:none" src="
+BUT_SHOWSIM="><span class="buttons" alt="More Like This">More Like This</span><img style="display:none" src="
 IMAGE_AVS1=/screens/relevance1.gif
 IMAGE_AVS2=/screens/relevance2.gif
 IMAGE_AVS3=/screens/relevance3.gif
@@ -111,7 +111,7 @@ IMAGE_AVS5=/screens/relevance5.gif
 #ICON_AWS_BYRELEVANCE_LINK=
 #ICON_AWS_BYDATE_LINK=
 #ICON_AWS_BYTITLE_LINK=
-RELSEARCH=searchtool||<img src="/screens/relsearch.gif" class="button" border="0" alt="See Related Searches" />
+RELSEARCH=searchtool||<span class="buttons" alt="Related Search">RELATED SEARCH</span>
 
 
 # Search Results
@@ -135,7 +135,7 @@ ICON_962LINK=<img src="/screens/bullet.gif" alt="Bullet Point" border="0" style=
 ICON_BOOKCART_SAVED=<img src="/screens/bookcart_saved.gif" alt="Remove from Book Cart" class="button" border="0" />
 ICON_FULLRECORD=<img src="/screens/viewfullrecord.gif" alt="View full record" class="button" border="0" width="36" height="25" /> See Full Record
 ICON_LOCATEINRESULTS=<img src="/screens/locateinresults.gif" alt="Locate in results" class="button" width="120" height="20" border="0" />
-ICON_PAGING_CAPTION=Result Page&nbsp;
+ICON_PAGING_CAPTION=&nbsp;
 ICON_PAGING_NEXT=Next
 ICON_PAGING_PREV=Prev
 ICON_SAVEALLPAGE=<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" width="120" height="20" border="0" />
@@ -171,17 +171,17 @@ TABLEPARAM_BROWSE=width="100%" cellpadding="2" cellspacing="0" border="0"|align=
 
 # Record Displays
 BIB_TOC_HEADER=<strong>Table of Contents</strong>
-BUT_MARC_DISPLAY=/screens/marc_display.gif
+BUT_MARC_DISPLAY="><span class="buttons" alt="MARC Display">MARC</span><img style="display:none" src="
 BUT_REGULAR_DISPLAY=/screens/regular_display.gif
-BUT_RTRNTB="><span class="buttons" alt="Return to Browse">Return to Browse</span><img style="display:none" src="
+BUT_RTRNTB="><span class="buttons" alt="Return to Browse">RETURN TO BROWSE</span><img style="display:none" src="
 DISPLAY_856=z|false
 HOLDINGS_POS=atpR
 #HOTLINK=i^020,c^09,n^505
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 ICON_BIB_PAGING_CAPTION=Result page:
-ICON_BIB_PAGING_NEXT=<img src="/screens/bib_paging_next.gif" class="button" border="0" alt="Next Record" />
-ICON_BIB_PAGING_PREV=<img src="/screens/bib_paging_prev.gif" class="button" border="0" alt="Previous Record" />
-ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif"/>&nbsp;<a id="recordnum" href="%s">Bookmark link for this record</a></div>
+ICON_BIB_PAGING_NEXT=<span class="buttons" alt="Next Record">NEXT</span>
+ICON_BIB_PAGING_PREV=<span class="buttons" alt="Previous">PREVIOUS</span>
+ICON_RECORDLINK=<a id="recordnum" href="%s"><span class="buttons" alt="Bookmark Link for this record">PERMALINK</span></a>
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate
@@ -232,16 +232,16 @@ SUPPRESS_CARD=UI
 
 # My Lists
 MY_LISTS=true
-ICON_MYLISTS=<img src="/screens/my_lists.gif" border="0"/>
-ICON_MYLISTS_EXPORT=<img src="/screens/mylists_export.gif" border="0"/>
-ICON_MYLISTS_REQUEST=<img src="/screens/request.gif" border="0"/>
-ICON_MYLISTS_SAVE=<img src="/screens/mylists_save.gif" border="0"/>
-ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/save_to_my_lists.gif" border="0"/>
+ICON_MYLISTS=<span class="buttons" alt="My Lists">MY LISTS</span>
+ICON_MYLISTS_EXPORT=<span class="buttons" alt="Export">EXPORT</span>
+ICON_MYLISTS_REQUEST=<span class="buttons" alt="Request">REQUEST</span>
+ICON_MYLISTS_SAVE=<span class="buttons" alt="Save">SAVE</span>
+ICON_MYLISTS_SAVE_TO_LIST=<span class="buttons" alt="Save to My Lists">SAVE TO MY LISTS</span>
 
 
 # Saving and Exporting
 #BRIEF_EXPORT=c|a|t|p
-BUT_BIBEXPORT=/screens/bibexport.gif
+BUT_BIBEXPORT="><span class="buttons" alt="Save Records">Save Records</span><img style="display:none" src="
 BUT_CLEAR_MARKED=/screens/clear_marked.gif
 BUT_EXPORT_MULTI=/screens/export_multi.gif
 BUT_EXPORT_VIEW_SAVES=/screens/export_view_saves.gif
@@ -253,7 +253,7 @@ XRECTYPE=boi
 
 # Requesting
 #BIBREQUEST=true
-BUT_REQUEST=/screens/request.gif
+BUT_REQUEST="><span class="buttons" alt="Request">Request</span><img style="display:none" src="
 BUT_REQUEST_ALL=/screens/request_all.gif
 BUT_REQUEST_MULTI=/screens/request_multi.gif
 BUT_REQUEST_RESET=/screens/request_reset.gif
@@ -412,7 +412,7 @@ BUT_EMAIL=/screens/email.gif
 BUT_NEXTREC=/screens/nextrec.gif
 BUT_PREVREC=/screens/prevrec.gif
 BUT_Z39_ANOTHER=/screens/z39_another.gif
-BUT_Z39_REQUEST=/screens/request.gif
+BUT_Z39_REQUEST="><span class="buttons" alt="Request">Request</span><img style="display:none" src="
 BUT_Z39SEARCH=/screens/z39search.gif
 Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
 Z39MULTI=500:100
